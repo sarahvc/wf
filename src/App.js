@@ -1,21 +1,29 @@
-import React, { Component } from 'react';
-import logo from './styles/assets/logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Play from './pages/Play';
+import About from './pages/About';
+import PlayerGuide from './pages/PlayerGuide';
+//import logo from './styles/assets/logo.svg';
 import './styles/scss/App.css';
+import './styles/scss/play.scss';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <div className='container'>
+        <div className='container artx-header position-fixed w-100 d-flex justify-content-between'>
+          <ul className='list-inline'>
+              <li className='list-inline-item'><a href='/about'>ARTX</a></li>
+              <li className='list-inline-item'><a href='/community'>Community</a></li>
+              <li className='list-inline-item'><a href='/auction-guide'>Auction Guide</a></li>
+          </ul>
+          <button className='btn btn-outline-primary' type='button'>Personal Account</button>
+        </div>
+
+      <Route exact path="/" component={Play} />
+      <Route path="/about" component={About} />
+      <Route path="/auction-guide" component={PlayerGuide} />
+    </div>
+  </Router>
+);
 
 export default App;

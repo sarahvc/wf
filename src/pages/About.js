@@ -1,12 +1,12 @@
 import React from 'react';
-import Subscribe from '../../src/components/atoms/Subscribe';
+import Subscribe from './atoms/Subscribe';
 
 const About = () => (
         <div>
             <h1 className='text-center'>ARTX LAB</h1>
             <p className='text-center'>A Decentralism Art Ecosystem: </p>
             <p>ARTX is a protocol</p>
-            <img src='' alt=''/>
+            <img className='img-fluid' src='https://via.placeholder.com/1280x300' alt=''/>
             <div className='ml-auto'>
                 <h2 className='text-right'>Proof-of-creativity</h2>
                 <p className='text-right'>In the past<br/>CONSENSUS</p>
