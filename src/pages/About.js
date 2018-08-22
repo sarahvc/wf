@@ -2,6 +2,7 @@ import React from 'react';
 import Subscribe from './atoms/Subscribe';
 
 const About = () => (
+
         <div>
             <h1 className='text-center'>ARTX LAB</h1>
             <p className='text-center'>A Decentralism Art Ecosystem: </p>

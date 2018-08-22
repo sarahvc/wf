@@ -16,7 +16,7 @@ export default class Subscribe extends Component {
         return (
             <form>
                 <div className="form-group text-center">
-                    <label for='subscribeEmail'>Enter your email to stay in touch with us!</label><br/>
+                    <label htmlFor='subscribeEmail'>Enter your email to stay in touch with us!</label><br/>
                     <input type='email' id='subscribeEmail'/><button type="submit" className="btn btn-outline-primary" onClick={this.handleSub}>JOIN NOW</button>
                 </div>
             </form>
