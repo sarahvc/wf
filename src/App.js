@@ -6,17 +6,19 @@ import About from './pages/About';
 import PlayerGuide from './pages/PlayerGuide';
 //import logo from './styles/assets/logo.svg';
 import './styles/scss/App.css';
-import './styles/scss/play.scss';
+import './styles/scss/header.scss';
+import './styles/scss/shared.scss';
+import './styles/scss/spacing.scss';
 
 const App =() => (
     <Router>
-      <div>
+      <div class='artx-gradient-bg pt-5'>
         <div className='container position-relative'>
-          <div className='container artx-header position-fixed w-100 d-flex justify-content-between'>
+          <div className='container artx-header py-4 position-fixed w-100 d-flex justify-content-between'>
             <ul className='list-inline'>
-                <li className='list-inline-item'><a href='/about'>ARTX</a></li>
-                <li className='list-inline-item'><a href='/community'>Community</a></li>
-                <li className='list-inline-item'><a href='/auction-guide'>Auction Guide</a></li>
+                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/about'>ARTX</a></li>
+                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/community'>Community</a></li>
+                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/auction-guide'>Auction Guide</a></li>
             </ul>
             <Account/>
           </div>

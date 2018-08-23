@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import '../../styles/scss/subscribe.scss';
 
 export default class Subscribe extends Component {    
     constructor(props) {
@@ -14,10 +15,14 @@ export default class Subscribe extends Component {
     };
     render () {
         return (
-            <form>
+            <form className='artx-subscribe-form'>
                 <div className="form-group text-center">
-                    <label htmlFor='subscribeEmail'>Enter your email to stay in touch with us!</label><br/>
-                    <input type='email' id='subscribeEmail'/><button type="submit" className="btn btn-outline-primary" onClick={this.handleSub}>JOIN NOW</button>
+                    <label className='artx-type-tw artx-gradient-text mb-4' htmlFor='subscribeEmail'>Subcribe to our email list to get updates of<br/>
+                    decentralism art auction game and ARTX airdrop</label><br/>
+                    <div className='artx-subscribe-input d-flex justify-content-between mx-auto'>
+                        <input className='py-3 apl-8' type='email' id='subscribeEmail' placeholder='Email'/>
+                        <button className='text-white font-weight-bold border-0 h-100 py-3 px-4' type="submit" onClick={this.handleSub}>JOIN NOW</button>
+                    </div>
                 </div>
             </form>
         )

@@ -1,8 +1,8 @@
 import React, { Component }  from 'react';
-import PropTypes from 'prop-types';
 import ReferLink from '../atoms/ReferLink';
 import ShareTo from '../atoms/ShareTo';
 import Subscribe from '../atoms/Subscribe';
+import eth from '../../styles/assets/ethereum.svg';
 import '../../styles/scss/popup.scss';
 
 export default class Popup extends Component {
@@ -29,19 +29,45 @@ export default class Popup extends Component {
             case 1:
                 return (
                     <div>
-                        <p className='text-danger'>Please login to your Metamask first</p>
-                        <p>Bid Genesis shares ealier to earn more dividend!</p>
-                        <div className='form-group row'>
+                        <p className='artx-type-twf text-center text-warning'>Please login to your Metamask first</p>
+                        <p className='artx-type-tw text-center artx-gradient-text mb-4'>Bid Genesis shares ealier to earn more dividend! <i className="far fa-question-circle align-text-top artx-gradient-text"></i></p>
+                        <div className='form-group text-center mb-4 '>
                             <input type='number' id='artxShares'/>
-                            <label  htmlFor='artxShares'>shares</label>
-                            <button className="btn btn-outline-primary">1X</button>
-                            <button className="btn btn-outline-primary">10X</button>
-                            <button className="btn btn-outline-primary">100X</button>
-                            <button className="btn btn-outline-primary">Average X</button>
-                            <button className="btn btn-outline-primary">Max X</button>
+                            <label className='artx-type-ths text-white' htmlFor='artxShares'>Shares = <span>{amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
                         </div>
-                        <p>={amount}ETH</p>
-                        <button className="btn btn-outline-primary" type='button' onClick={() => this.setStep(1)}>Next</button>
+                        <div className='artx-shares-btn text-center amb-9'>
+                            <button className="mr-4">
+                                <span className='d-inline-block px-4 py-1'>
+                                    <span className='artx-type-twf artx-gradient-text'>1X
+                                    </span>
+                                </span>
+                            </button>
+                            <button className="mr-4">
+                                <span className='d-inline-block px-4 py-1'>
+                                    <span className='artx-type-twf artx-gradient-text'>10X
+                                    </span>
+                                </span>
+                            </button>
+                            <button className="mr-4">
+                                <span className='d-inline-block px-4 py-1'>
+                                    <span className='artx-type-twf artx-gradient-text'>100X
+                                    </span>
+                                </span>
+                            </button>
+                            <button className="mr-4">
+                                <span className='d-inline-block px-4 py-1'>
+                                    <span className='artx-type-twf artx-gradient-text'>AVE
+                                    </span>
+                                </span>
+                            </button>
+                            <button className="mr-4">
+                                <span className='d-inline-block px-4 py-1'>
+                                    <span className='artx-type-twf artx-gradient-text'>MAX
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                        <button className="d-block mx-auto artx-btn artx-type-tw text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>Next</button>
                     </div>
                 );
             case 2:
@@ -118,24 +144,23 @@ export default class Popup extends Component {
         const {referred, step, isOpen} = this.state;
         return (
             <div>
-                <button className='btn btn-outline-primary' onClick={() => this.setState({isOpen: true})}>Bid</button>
+                <button className='d-block ml-auto artx-btn text-white artx-type-twf py-3 apx-14' onClick={() => this.setState({isOpen: true})}>Bid <i className="fas fa-gavel"></i></button>
                 { isOpen
-                ? <div className='artx-bid-container bg-white'>
+                ? <div className='artx-bid-outter'>
                     <progress className='w-100 mb-1' value={step} max='4'></progress>
-                    <div className='artx-bid-inner'>
+                    <div className='artx-bid-inner pt-4 apb-14 w-100'>
                         {
                             endsStep
-                            ? <div className='text-right'>
-                                <button type="button" className="close" aria-label="Close" onClick={this.closeBid}>
-                                    <span aria-hidden="true">&times;</span>
+                            ?
+                                <button type="button" className="d-block ml-auto amr-9 artx-icon-btn" aria-label="Close" onClick={this.closeBid}>
+                                    <i class="fas fa-times artx-type-twf artx-gradient-text"></i>
                                 </button>
-                            </div>
-                            : <div className='d-flex justify-content-between'>
-                                <button type="button" className='btn btn-outline-primary' aria-label='Go back to previous step' onClick={() => this.setStep(-1)}>
-                                    <i className="fas fa-chevron-left"></i>
+                            : <div className='d-flex justify-content-between amx-9'>
+                                <button type="button" className='artx-icon-btn' aria-label='Go back to previous step' onClick={() => this.setStep(-1)}>
+                                    <i className="artx-type-twf fas fa-chevron-left artx-gradient-text"></i>
                                 </button>
-                                <button type="button" className="close" aria-label="Close" onClick={this.closeBid}>
-                                    <span aria-hidden="true">&times;</span>
+                                <button type="button" className="artx-icon-btn" aria-label="Close" onClick={this.closeBid}>
+                                    <i class="fas fa-times artx-type-twf artx-gradient-text"></i>
                                 </button>
                             </div>
                         }

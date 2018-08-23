@@ -13,7 +13,7 @@ export default class Middle extends Component {
     };
     render() {
         return (
-            <div>
+            <div className='artx-type-twf text-white mt-5'>
                 <span id='artxMA'>Max appraisal: </span><span className='pr-4' aria-labelledby='artxMA'>{this.state.maxAppraisal}ETH</span>
                 <span id='artxAA'>Average appraisal: </span><span className='pr-4' aria-labelledby='artxAA'>{this.state.avgAppraisal}ETH</span>
                 <span id='artx1A'>Rickyangyang&apos;s appraisal: </span><span className='pr-4' aria-labelledby='artx1A'>{this.state.followingAppraisal[0]}ETH</span>

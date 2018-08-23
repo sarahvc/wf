@@ -1,7 +1,48 @@
-.artx-bid-container {
+.artx-bid-outter {
     width: 800px;
     position: absolute;
     z-index: 2;
-    top: 20%;
-    left: 20%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px 5px rgba(73, 110, 105, 0.5), 2px 2px 10px 5px rgba(73, 110, 105, 0.5);
+    background-image: linear-gradient(114deg, #43d7a7, #ad5ef3);
+    progress {
+        &:not([value]) {
+            background-color: #0e0525;
+        }
+        &[value] {
+            background-color: transparent;
+        }
+    }
+}
+
+.artx-bid-inner {
+    background-color: #0e0525;
+    border-radius: 0 0 15px 15px;
+    input {
+        border-width: 0 0 3px 0;
+        border-style: solid; 
+        border-color: white; 
+        background-color: transparent;
+    }
+}
+
+.artx-icon-btn {
+        border: 0;
+        background-color: transparent;
+}
+
+.artx-shares-btn {
+    button {
+        border: 0;
+        border-radius: 5px;
+        background-image: linear-gradient(112deg, #43d7a7, #ad5ef3);
+        padding: 2px;
+        &>span {
+            background-color: #0e0525;
+            border-radius: 3px; 
+        }
+    }
 }

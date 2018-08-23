@@ -1,6 +1,5 @@
 import React, { Component }  from 'react';
 //import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 import AccountTR from '../atoms/AccountTR';
 import ReferLink from '../atoms/ReferLink';
 import ShareTo from '../atoms/ShareTo';
@@ -43,7 +42,7 @@ export default class Account extends Component {
         const {uName, walletAddr, uEmail, bid, shares, referEarnings, totalEarnings, withdrawn, availForWithdraw, editName, isOpen} = this.state;
         return (
             <div>
-                <button className='btn btn-outline-primary' type='button' onClick={() => this.setState({isOpen: true})}>Personal Account</button>
+                <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><span className='artx-gradient-text artx-type-twf'><i className="far fa-user artx-gradient-text"></i> Personal Account</span></button>
                 {
                     isOpen
                     ? <div className='artx-account-container bg-white p-3'>

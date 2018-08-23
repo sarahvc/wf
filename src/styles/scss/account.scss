@@ -5,4 +5,14 @@
     top: 10%;
     right: 5%;
     background-color: white;
+    button {
+        cursor: pointer;
+    }
+}
+
+.artx-gradient-text {
+    background: linear-gradient(98deg, #43d7a7, #ad5ef3);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 0; 
 }
