@@ -60,7 +60,7 @@ export default class Account extends Component {
                                         { editName
                                         ? <button className="btn btn-outline-primary" type='submit' onClick={this.changeName}>Submit</button>
                                         : <button className="btn btn-outline-primary" onClick={this.changeName} aria-label='edit account name' type='button'>
-                                        <i className="far fa-edit"></i>
+                                        <i class="fas fa-pen"></i>
                                     </button>}
                                     </div>
                                 </div>
@@ -68,13 +68,13 @@ export default class Account extends Component {
                                 <div className="form-group row">
                                     <label  htmlFor="artxWA" className="">Wallet Address</label>
                                     <div className="border-bottom">
-                                        <input type="text" readonly className="form-control-plaintext" id="artxWAd" value={walletAddr}/>
+                                        <input type="text" readOnly className="form-control-plaintext" id="artxWAd" value={walletAddr}/>
                                     </div>
                                 </div>
                                 <div className="form-group row">
                                     <label  htmlFor="artxE" className="">Email</label>
                                     <div className="border-bottom">
-                                        <input type="email" readonly className="form-control-plaintext" id="artxE" value={uEmail}/>
+                                        <input type="email" readOnly className="form-control-plaintext" id="artxE" value={uEmail}/>
                                     </div>
                                 </div>
                                 <div className="form-group row">

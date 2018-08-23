@@ -1,7 +1,6 @@
 import React, { Component }  from 'react';
 import ReferLink from '../atoms/ReferLink';
 import ShareTo from '../atoms/ShareTo';
-import Subscribe from '../atoms/Subscribe';
 import Info from '../atoms/Info';
 import eth from '../../styles/assets/ethereum.svg';
 import '../../styles/scss/popup.scss';
@@ -12,7 +11,7 @@ export default class Popup extends Component {
     
         this.state = {
           //??should these be props or states??
-          referred: false,
+          referred: true,
           amount: 'xxx.xx',
           //inside component
           step: 1,
@@ -29,11 +28,11 @@ export default class Popup extends Component {
         switch(s) {
             case 1:
                 return (
-                    <div>
+                    <div className='mx-auto'>
                         <p className='artx-type-twf text-center text-warning'>Please login to your Metamask first</p>
                         <p className='artx-type-tw text-center artx-gradient-text mb-4'>Bid Genesis shares ealier to earn more dividend! <Info/></p>
                         <div className='form-group text-center mb-4 '>
-                            <input type='number' id='artxShares'/>
+                            <input className='artx-bid-input artx-type-tw text-white mr-2' type='number' id='artxShares'/>
                             <label className='artx-type-ths text-white' htmlFor='artxShares'>Shares = <span>{amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
                         </div>
                         <div className='artx-shares-btn text-center amb-9'>
@@ -73,59 +72,58 @@ export default class Popup extends Component {
                 );
             case 2:
                     return (
-                        <div>
-                            <p>Now, guess the final hammer price of Genesis!</p>
-                            <p>The top 3 most accurstest lucky people win the Jackpot!</p>
-                            <div className='form-group row'>
-                                <label  htmlFor='artxA'>Your Appraisal</label>
-                                <input type='number' id='artxA' aria-describedby='artxAU'/>
-                                <span id='artxAU'>ETH</span>
+                        <div className='mx-auto artx-bid-content'>
+                            <p className='artx-type-tw artx-gradient-text amt-8 mb-1'>Now, guess the final hammer price of Genesis!</p>
+                            <p className='artx-type-tw artx-gradient-text amb-8'>The top 3 most accurate appraisers will win the <b>Appraisal Jackpot</b>!</p>
+                            <div className='text-center amb-18'>
+                                <label className='artx-type-ths text-white mb-1' htmlFor='artxA'>Your Appraisal</label>
+                                <input className='artx-bid-input artx-type-tw text-white ml-2' type='number' id='artxA' aria-describedby='artxAU'/>
+                                <img className='artx-eth-m align-text-bottom ml-2' src={eth} alt='ethereum icon'/>
                             </div>
-                            <p>={amount}ETH</p>
-                            <button className="btn btn-outline-primary" type='button' onClick={() => this.setStep(1)}>Next</button>  
+                            <button className="d-block mx-auto artx-btn artx-type-tw text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>Next</button>  
                         </div>
                     );
             case 3:
                 if (b === true) {
                     return (
-                        <div>
-                            <p>Good news!</p>
-                            <p>You are referred by a friend, so you will can get 10% bonus! </p>
-                            <p>Referral Link http://decentralism.io/928uhewf/</p>
-                            <p className='text-danger'>NOTICE：Please link with your Metamask and try again！</p>
-                            <button className="btn btn-outline-primary" type='button' onClick={() => this.setStep(1)}>Bid</button>
+                        <div className='mx-auto artx-bid-content'>
+                            <p className='artx-type-twf artx-gradient-text mb-4'>Good news! You will receive a 10% bonus because you are referred by a friend!</p>
+                            <p className='artx-type-twf text-center text-warning amb-8'>NOTICE:  Login to Metamask to try again!</p>
+                            <button className="d-block mx-auto artx-btn artx-type-tw text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>Bid</button>
                         </div>
                     );
                 } else {
                     return (
-                        <div>
-                            <p>Last step</p>
-                            <p>If someone refered you, enter their link to get 10% ETH bonus! </p>
-                            <div className='form-group row'>
-                                <label  htmlFor='artxRLFI'>Referral Link</label>
-                                <input id='artxRLFI' aria-describedby='artxRFLIO'/>
-                                <span id='artxRFLIO'>(Optional)</span>
+                        <div className='mx-auto artx-bid-content'>
+                            <p className='artx-type-tw artx-gradient-text mb-1'>Last step!</p>
+                            <p className='artx-type-tw artx-gradient-text mb-3'>If someone refered you, enter their link to get 10% ETH bonus! <Info/></p>
+                            <div className='mb-3'>
+                                <label className='artx-type-tw text-white' htmlFor='artxRLFI'>Referral Link</label>
+                                <input className='artx-bid-input-s artx-type-et text-white mx-2' id='artxRLFI' aria-describedby='artxRFLIO'/>
+                                <span className='artx-type-tw text-white' id='artxRFLIO'>(Optional)</span>
                             </div>
-                            <p className='text-danger'>NOTICE：Please link with your Metamask and try again！</p>
-                            <button className='btn btn-outline-primary' type='button' onClick={() => this.setStep(1)}>Bid</button>
+                            <p className='text-center artx-type-twf text-warning amb-8'>NOTICE:  Login to Metamask to try again!</p>
+                            <button className='d-block mx-auto artx-btn artx-type-tw text-center text-white py-2 apx-13' type='button' onClick={() => this.setStep(1)}>Bid</button>
                         </div>
                     );
                 };
             case 4:
                 return (
-                    <div className='text-center'>
-                        <h3 className='text-center artx-type-ths artx-gradient-text'>Congratulations!</h3>
-                        <p className='text-center artx-type-et text-white'>Your bidding has been submitted to blockchain!</p>
-                        <p className='text-center artx-type-et text-white'>Check your status in <b>Personal Account</b> anytime!</p>
-                        <p className='text-center artx-type-et artx-gradient-text'>Here is your <b>Personal Refferal Link</b> <Info/></p>
-                        <p>share to others to win 10% of their bids!</p>
-                        <p className='text-center'>The more you reffered, the more you earn!</p>
-                        <div className='d-flex justify-content-between'>
+                    <div className='mx-auto'>
+                        <h3 className='text-center artx-type-ths artx-gradient-text mb-2'>Congratulations!</h3>
+                        <p className='text-center artx-type-et text-white mb-1'>Your bidding has been submitted to blockchain!</p>
+                        <p className='text-center artx-type-et text-white amb-8'>Check your status in <b>Personal Account</b> anytime!</p>
+                        <p className='text-center artx-type-et artx-gradient-text mb-1'>Here is your <b>Personal Refferal Link</b> share to others to win 10% of their bids!<Info/></p>
+                        <p className='text-center artx-type-et artx-gradient-text'>The more you reffered, the more you earn!</p>
+                        <div className='d-flex justify-content-center amb-9'>
                             <ReferLink link='uadsfafadf'/>
                             <ShareTo/>
                         </div>
-                        <Subscribe/>
-                        <button type='button' className='btn btn-outline-primary' onClick={this.closeBid}>Finish</button>
+                        <label className='artx-type-et text-white mb-4 text-center' htmlFor='subscribeEmail'>Enter your email to receive ARTX airdrop invitations and auction game updates!</label>
+                        <div className='artx-subscribe-input mx-auto amb-8'>
+                            <input className='artx-type-tw py-3 pl-4 text-white border-0' type='email' id='subscribeEmail' placeholder='Email'/>
+                        </div>
+                        <button type='button' className='d-block mx-auto artx-btn artx-type-tw text-center text-white py-2 apx-13' onClick={this.closeBid}>Finish</button>
                     </div>
                 )
             default:
