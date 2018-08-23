@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 import ReferLink from '../atoms/ReferLink';
 import ShareTo from '../atoms/ShareTo';
 import Subscribe from '../atoms/Subscribe';
+import Info from '../atoms/Info';
 import eth from '../../styles/assets/ethereum.svg';
 import '../../styles/scss/popup.scss';
 
@@ -30,7 +31,7 @@ export default class Popup extends Component {
                 return (
                     <div>
                         <p className='artx-type-twf text-center text-warning'>Please login to your Metamask first</p>
-                        <p className='artx-type-tw text-center artx-gradient-text mb-4'>Bid Genesis shares ealier to earn more dividend! <i className="far fa-question-circle align-text-top artx-gradient-text"></i></p>
+                        <p className='artx-type-tw text-center artx-gradient-text mb-4'>Bid Genesis shares ealier to earn more dividend! <Info/></p>
                         <div className='form-group text-center mb-4 '>
                             <input type='number' id='artxShares'/>
                             <label className='artx-type-ths text-white' htmlFor='artxShares'>Shares = <span>{amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
@@ -113,10 +114,11 @@ export default class Popup extends Component {
             case 4:
                 return (
                     <div className='text-center'>
-                        <h3 className='text-center'>Congratulations!</h3>
-                        <p className='text-center'>Your bidding has been submitted to blockchain!</p>
-                        <p className='text-center'>Check your status in <b>Personal Account</b> anytime!</p>
-                        <p className='text-center'>Here is your Personal Refferal Link, share to others to win 10% of their money!</p>
+                        <h3 className='text-center artx-type-ths artx-gradient-text'>Congratulations!</h3>
+                        <p className='text-center artx-type-et text-white'>Your bidding has been submitted to blockchain!</p>
+                        <p className='text-center artx-type-et text-white'>Check your status in <b>Personal Account</b> anytime!</p>
+                        <p className='text-center artx-type-et artx-gradient-text'>Here is your <b>Personal Refferal Link</b> <Info/></p>
+                        <p>share to others to win 10% of their bids!</p>
                         <p className='text-center'>The more you reffered, the more you earn!</p>
                         <div className='d-flex justify-content-between'>
                             <ReferLink link='uadsfafadf'/>
@@ -141,13 +143,16 @@ export default class Popup extends Component {
 
     render() {
         const endsStep = this.state.step === 1 || this.state.step === 4 ? true : false; 
+        const progBarWidth = this.state.step === 4
+        ? { width: '0px'}
+        : { width: (1 - this.state.step/3) * 100 + '%' };
         const {referred, step, isOpen} = this.state;
         return (
             <div>
                 <button className='d-block ml-auto artx-btn text-white artx-type-twf py-3 apx-14' onClick={() => this.setState({isOpen: true})}>Bid <i className="fas fa-gavel"></i></button>
                 { isOpen
                 ? <div className='artx-bid-outter'>
-                    <progress className='w-100 mb-1' value={step} max='4'></progress>
+                    <div className='artx-progress-bar ml-auto' style={progBarWidth}></div>
                     <div className='artx-bid-inner pt-4 apb-14 w-100'>
                         {
                             endsStep

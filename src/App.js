@@ -12,9 +12,9 @@ import './styles/scss/spacing.scss';
 
 const App =() => (
     <Router>
-      <div class='artx-gradient-bg pt-5'>
-        <div className='container position-relative'>
-          <div className='container artx-header py-4 position-fixed w-100 d-flex justify-content-between'>
+      <div className='artx-gradient-bg pt-5'>
+        <div className='position-relative'>
+          <div className='artx-header py-4 apx-14 position-fixed w-100 d-flex justify-content-between'>
             <ul className='list-inline'>
                 <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/about'>ARTX</a></li>
                 <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/community'>Community</a></li>

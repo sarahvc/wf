@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import Popup from './Popup';
+import Info from '../atoms/Info';
 import upcaret from '../../styles/assets/upcaret.svg';
 import eth from '../../styles/assets/ethereum.svg';
 import ethgreen from '../../styles/assets/ethereumgreen.svg';
@@ -33,7 +34,7 @@ export default class Above extends Component {
                     <Popup/>
                 </div>
                 <div>
-                    <p className='artx-type-twf artx-gradient-text'>Auction Hardcap Remaining <i className="far fa-question-circle align-text-top artx-gradient-text"></i></p>
+                    <p className='artx-type-twf artx-gradient-text'>Auction Hardcap Remaining <Info/></p>
                     <p className='artx-type-twf artx-gradient-text mb-4'>{diffAppraisal}<img className='artx-eth-s align-top ml-2' src={eth} alt='ethereum icon'/></p>
                     
                     <div className='artx-jackpot-status'>
