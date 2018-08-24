@@ -15,7 +15,7 @@ const App =() => (
       <div className='artx-gradient-bg pt-5'>
         <div className='position-relative'>
           <div className='artx-header py-4 apx-14 position-fixed w-100 d-flex justify-content-between'>
-            <ul className='list-inline'>
+            <ul className='list-inline mb-0'>
                 <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/about'>ARTX</a></li>
                 <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/community'>Community</a></li>
                 <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/auction-guide'>Auction Guide</a></li>
@@ -23,9 +23,9 @@ const App =() => (
             <Account/>
           </div>
         </div>
-        <Route exact path="/"  component={Play} />
-        <Route path="/about" component={About} />
-        <Route path="/auction-guide" component={PlayerGuide} />
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={Play} />
+        <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
+        <Route path={process.env.PUBLIC_URL + '/auction-guide'} component={PlayerGuide} />
       </div>
     </Router>
 );

@@ -1,18 +1,35 @@
 .artx-account-container {
-    width: 272px;
+    max-width: 666px;
+    border-radius: 10px;
+    padding: 2px;
     position: absolute;
     z-index: 10;
-    top: 10%;
-    right: 5%;
-    background-color: white;
+    right: 56px;
     button {
         cursor: pointer;
     }
+
+    .artx-gradient-inner {
+        border-radius: 8px;
+    }
+
+    input {
+        background-color: transparent;
+    }
+    
+    th {
+        font-weight: 400;
+    }
 }
 
-.artx-gradient-text {
-    background: linear-gradient(98deg, #43d7a7, #ad5ef3);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: 0; 
+.artx-yellow-dot::after {
+    content:'•';
+    color: #ffff00;
+    font-size: 2.25rem;
+    margin-left: 4px;
+}
+
+.artx-refer-account {
+    display: flex;
+    justify-content: space-between;
 }

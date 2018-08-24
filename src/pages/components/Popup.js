@@ -116,7 +116,7 @@ export default class Popup extends Component {
                         <p className='text-center artx-type-et artx-gradient-text mb-1'>Here is your <b>Personal Refferal Link</b> share to others to win 10% of their bids!<Info/></p>
                         <p className='text-center artx-type-et artx-gradient-text'>The more you reffered, the more you earn!</p>
                         <div className='d-flex justify-content-center amb-9'>
-                            <ReferLink link='uadsfafadf'/>
+                            <ReferLink link='uadsfafadf' account='false'/>
                             <ShareTo/>
                         </div>
                         <label className='artx-type-et text-white mb-4 text-center' htmlFor='subscribeEmail'>Enter your email to receive ARTX airdrop invitations and auction game updates!</label>
@@ -149,21 +149,21 @@ export default class Popup extends Component {
             <div>
                 <button className='d-block ml-auto artx-btn text-white artx-type-twf py-3 apx-14' onClick={() => this.setState({isOpen: true})}>Bid <i className="fas fa-gavel"></i></button>
                 { isOpen
-                ? <div className='artx-bid-outter'>
+                ? <div className='artx-bid-container artx-gradient-outter'>
                     <div className='artx-progress-bar ml-auto' style={progBarWidth}></div>
-                    <div className='artx-bid-inner pt-4 apb-14 w-100'>
+                    <div className='artx-gradient-inner pt-4 apb-14 w-100'>
                         {
                             endsStep
                             ?
                                 <button type="button" className="d-block ml-auto amr-9 artx-icon-btn" aria-label="Close" onClick={this.closeBid}>
-                                    <i class="fas fa-times artx-type-twf artx-gradient-text"></i>
+                                    <i className="fas fa-times artx-type-twf artx-gradient-text"></i>
                                 </button>
                             : <div className='d-flex justify-content-between amx-9'>
                                 <button type="button" className='artx-icon-btn' aria-label='Go back to previous step' onClick={() => this.setStep(-1)}>
                                     <i className="artx-type-twf fas fa-chevron-left artx-gradient-text"></i>
                                 </button>
                                 <button type="button" className="artx-icon-btn" aria-label="Close" onClick={this.closeBid}>
-                                    <i class="fas fa-times artx-type-twf artx-gradient-text"></i>
+                                    <i className="fas fa-times artx-type-twf artx-gradient-text"></i>
                                 </button>
                             </div>
                         }

@@ -27,7 +27,7 @@ export default class Account extends Component {
       };
 
       this.triggerW = this.triggerW.bind(this);
-      this.changeName = this.triggerW.bind(this);
+      this.changeName = this.changeName.bind(this);
     };
 
     triggerW() {
@@ -45,66 +45,69 @@ export default class Account extends Component {
                 <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><span className='artx-gradient-text artx-type-twf'><i className="far fa-user artx-gradient-text"></i> Personal Account</span></button>
                 {
                     isOpen
-                    ? <div className='artx-account-container bg-white p-3'>
-                        <div className='text-right'>
-                            <button type="button" className="close" aria-label="Close" onClick={() => this.setState({isOpen: false})}>
-                                <span aria-hidden="true">&times;</span>
+                    ? <div className='artx-account-container artx-gradient-outter'>
+                        <div className='artx-gradient-inner ap-8'>
+                            <button type="button" className="d-block ml-auto artx-icon-btn" aria-label="Close" onClick={() => this.setState({isOpen: false})}>
+                                <i className="fas fa-times artx-type-twf artx-gradient-text"></i>
                             </button>
-                        </div>
-                        <div className='ml-3 mb-3 mr-3'>
-                            <form>
-                                <div className="form-group row">
-                                    <label  htmlFor="artxAN" className="">Account Name</label>
-                                    <div className="d-flex justify-content-between border-bottom">
-                                        <input type="text" className="form-control" id="artxAN" value={uName}/>
-                                        { editName
-                                        ? <button className="btn btn-outline-primary" type='submit' onClick={this.changeName}>Submit</button>
-                                        : <button className="btn btn-outline-primary" onClick={this.changeName} aria-label='edit account name' type='button'>
-                                        <i class="fas fa-pen"></i>
-                                    </button>}
+                            <div className='mt-2'>
+                                <form>
+                                    <div className="form-group">
+                                        <label htmlFor="artxAN" className="artx-type-twf text-white artx-yellow-dot">Account Name</label>
+                                            { editName
+                                            ? <div className="d-flex justify-content-between border-bottom">
+                                                <input type="text" className="artx-type-tw text-white border-0 w-100" id="artxAN" defaultValue={uName}/>
+                                                <button className="artx-btn text-white p-2" type='submit' onClick={this.changeName}>Submit</button>
+                                            </div>
+                                            : <div className="d-flex justify-content-between border-bottom">
+                                                <input type="text" readOnly  className="artx-type-tw text-white border-0 w-100" id="artxAN" value={uName}/>
+                                                <button className="artx-icon-btn" onClick={this.changeName} aria-label='edit account name' type='button'>
+                                                    <i className="far fa-edit artx-type-twf artx-gradient-text"></i>
+                                                </button>
+                                            </div>}
                                     </div>
-                                </div>
-        
-                                <div className="form-group row">
-                                    <label  htmlFor="artxWA" className="">Wallet Address</label>
-                                    <div className="border-bottom">
-                                        <input type="text" readOnly className="form-control-plaintext" id="artxWAd" value={walletAddr}/>
+            
+                                    <div className="form-group mt-3">
+                                        <label  htmlFor="artxWA" className="artx-type-twf text-white">Wallet Address</label>
+                                        <div className="border-bottom">
+                                            <input type="text" readOnly className="artx-type-tw text-white border-0 w-100" id="artxWAd" value={walletAddr}/>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="form-group row">
-                                    <label  htmlFor="artxE" className="">Email</label>
-                                    <div className="border-bottom">
-                                        <input type="email" readOnly className="form-control-plaintext" id="artxE" value={uEmail}/>
+                                    <div className="form-group mt-3">
+                                        <label  htmlFor="artxE" className="artx-type-twf text-white artx-yellow-dot">Email</label>
+                                        <div className="border-bottom">
+                                            <input type="email" readOnly className="artx-type-tw text-white border-0 w-100" id="artxE" value={uEmail}/>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="form-group row">
-                                    <label  htmlFor="artxRL" className="">Personal Referral Link</label>
-                                    <div className="border-bottom">
-                                        <ReferLink link='uadsfafadf'/>
+                                    <div className="form-group mt-3">
+                                        <label htmlFor="artxRL" className="artx-type-twf text-white">Personal Referral Link</label>
+                                        <div className="border-bottom">
+                                            <ReferLink link='uadsfafadf' account='true'/>
+                                        </div>
                                     </div>
+                                </form>
+                                <div className='d-flex mt-4'>
+                                    <p className='artx-type-tw text-white'>Share to</p>
+                                    <ShareTo/>
                                 </div>
-                            </form>
-                            <div className='d-flex'>
-                                <p>Share to</p>
-                                <ShareTo/>
+                                <table className='mt-4'>
+                                    <thead className="sr-only">
+                                        <tr>
+                                            <th>User profile item</th>
+                                            <th>User profile content</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <AccountTR label='Bid' content={bid}/>
+                                        <AccountTR label='Shares' content={shares}/>
+                                        <AccountTR label='Referral' content={referEarnings}/>
+                                        <AccountTR label='Total Earnings' content={totalEarnings}/>
+                                        <AccountTR label='Withdrawn' content={withdrawn}/>
+                                        <AccountTR label='Available for withdraw' content={availForWithdraw}/>
+                                    </tbody>
+                                </table>
+                                <button className='w-100 artx-btn artx-type-twf text-white amt-8 py-2' onClick={this.triggerW} type='button'>Withdraw</button>
                             </div>
-                            <table className='artx-account-table'>
-                                <thead className="sr-only">
-                                    <tr>
-                                        <th>User profile item</th>
-                                        <th>User profile content</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <AccountTR label='Bid' content={bid}/>
-                                    <AccountTR label='Shares' content={shares}/>
-                                    <AccountTR label='Referral' content={referEarnings}/>
-                                    <AccountTR label='Total Earnings' content={totalEarnings}/>
-                                    <AccountTR label='Withdrawn' content={withdrawn}/>
-                                    <AccountTR label='Available for withdraw' content={availForWithdraw}/>
-                                </tbody>
-                            </table>
-                            <button className='w-100 btn btn-outline-primary' onClick={this.triggerW} type='button'>Withdraw</button>
                         </div>
                     </div>
                     : null
