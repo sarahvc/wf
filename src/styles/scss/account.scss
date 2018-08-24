@@ -11,6 +11,8 @@
 
     .artx-gradient-inner {
         border-radius: 8px;
+        max-height: calc(100vh - 59px);
+        overflow: scroll;
     }
 
     input {
@@ -20,6 +22,8 @@
     th {
         font-weight: 400;
     }
+    max-height: calc(100vh - 55px);
+    overflow: scroll;
 }
 
 .artx-yellow-dot::after {
