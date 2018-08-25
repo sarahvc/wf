@@ -16,10 +16,10 @@ const App =() => (
         <div className='position-relative'>
           <div className='artx-header py-4 apx-14 position-fixed w-100 d-flex justify-content-between'>
             <ul className='list-inline mb-0'>
-                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/'>Game</a></li>
-                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/about'>ARTX</a></li>
-                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/community'>Community</a></li>
-                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/auction-guide'>Auction Guide</a></li>
+                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/artx00/'>Game</a></li>
+                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/artx00/about'>ARTX</a></li>
+                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/artx00/community'>Community</a></li>
+                <li className='list-inline-item mr-5'><a className='artx-type-twf' href='/artx00/auction-guide'>Auction Guide</a></li>
             </ul>
             <Account/>
           </div>

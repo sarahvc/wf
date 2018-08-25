@@ -131,7 +131,7 @@ export default class Popup extends Component {
         }
     }
 
-    closeBid () {
+    closeBid() {
         this.setState({isOpen: false, step: 1});
     }
 
@@ -149,7 +149,7 @@ export default class Popup extends Component {
             <div>
                 <button className='d-block ml-auto artx-btn text-white artx-type-twf py-3 apx-14' onClick={() => this.setState({isOpen: true})}>Bid <i className="fas fa-gavel"></i></button>
                 { isOpen
-                ? <div className='artx-bid-container artx-gradient-outter'>
+                ? <div className='artx-bid-container position-absolute artx-gradient-outter'>
                     <div className='artx-progress-bar ml-auto' style={progBarWidth}></div>
                     <div className='artx-gradient-inner pt-4 apb-14 w-100'>
                         {

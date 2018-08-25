@@ -14,9 +14,8 @@ export default class Account extends Component {
         uName: 'Rickyyangyang',
         walletAddr: 'jwefwe87…2kwefjefew7yr23ifu',
         uEmail: 'Rickyyangyang@artx.io',
-        //shareTo: ['ry', 'clem', 'sarah'],
         bid: 'XXX.xxxx',
-        shares: 'XXX.xxxx',
+        shares: 'XXX',
         referEarnings: 'XXX.xxxx',
         totalEarnings: 'XXX.xxxx',
         withdrawn: 'XXX.xxxx',
@@ -45,7 +44,7 @@ export default class Account extends Component {
                 <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><span className='artx-gradient-text artx-type-twf'><i className="far fa-user artx-gradient-text"></i> Personal Account</span></button>
                 {
                     isOpen
-                    ? <div className='artx-account-container artx-gradient-outter'>
+                    ? <div className='artx-account-container position-absolute artx-gradient-outter'>
                         <div className='artx-gradient-inner ap-8'>
                             <button type="button" className="d-block ml-auto artx-icon-btn" aria-label="Close" onClick={() => this.setState({isOpen: false})}>
                                 <i className="fas fa-times artx-type-twf artx-gradient-text"></i>
@@ -75,8 +74,11 @@ export default class Account extends Component {
                                     </div>
                                     <div className="form-group mt-3">
                                         <label  htmlFor="artxE" className="artx-type-twf text-white artx-yellow-dot">Email</label>
-                                        <div className="border-bottom">
+                                        <div className="d-flex justify-content-between border-bottom">
                                             <input type="email" readOnly className="artx-type-tw text-white border-0 w-100" id="artxE" value={uEmail}/>
+                                            <button className="artx-icon-btn" onClick={this.changeName} aria-label='email address verified' type='button'>
+                                                <i className="fas fa-check"></i>
+                                            </button>
                                         </div>
                                     </div>
                                     <div className="form-group mt-3">
