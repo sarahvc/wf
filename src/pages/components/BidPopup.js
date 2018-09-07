@@ -30,7 +30,7 @@ export default class Popup extends Component {
                 return (
                     <div className='mx-auto'>
                         <p className='artx-type-twf text-center text-warning'>Please login to your Metamask first</p>
-                        <p className='artx-type-tw text-center artx-gradient-text mb-4'>Bid Genesis shares ealier to earn more dividend! <Info/></p>
+                        <p className='artx-type-tw text-center artx-gradient-text mb-4'>Bid <i>Genesis</i> shares ealier to earn more dividend! <Info/></p>
                         <div className='form-group text-center mb-4 '>
                             <input className='artx-bid-input artx-type-tw text-white mr-2' type='number' id='artxShares'/>
                             <label className='artx-type-ths text-white' htmlFor='artxShares'>Shares = <span>{amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
@@ -73,7 +73,7 @@ export default class Popup extends Component {
             case 2:
                     return (
                         <div className='mx-auto artx-bid-content'>
-                            <p className='artx-type-tw artx-gradient-text amt-8 mb-1'>Now, guess the final hammer price of Genesis!</p>
+                            <p className='artx-type-tw artx-gradient-text amt-8 mb-1'>Now, guess the final hammer price of <i>Genesis</i>!</p>
                             <p className='artx-type-tw artx-gradient-text amb-8'>The top 3 most accurate appraisers will win the <b>Appraisal Jackpot</b>!</p>
                             <div className='text-center amb-18'>
                                 <label className='artx-type-ths text-white mb-1' htmlFor='artxA'>Your Appraisal</label>
