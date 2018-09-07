@@ -41,7 +41,7 @@ export default class Account extends Component {
         const {uName, walletAddr, uEmail, bid, shares, referEarnings, totalEarnings, withdrawn, availForWithdraw, editName, isOpen} = this.state;
         return (
             <div>
-                <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><span className='artx-gradient-text artx-type-twf'><i className="far fa-user artx-gradient-text"></i> Personal Account</span></button>
+                <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><i className="far fa-user artx-gradient-text artx-type-twf"></i><span className='artx-gradient-text artx-type-twf d-none d-lg-inline'> Personal Account</span></button>
                 {
                     isOpen
                     ? <div className='artx-account-container position-absolute artx-gradient-outter'>
@@ -89,7 +89,7 @@ export default class Account extends Component {
                                     </div>
                                 </form>
                                 <div className='d-flex mt-4'>
-                                    <p className='artx-type-tw text-white'>Share to</p>
+                                    <p className='artx-type-tw text-white mr-3'>Share to</p>
                                     <ShareTo/>
                                 </div>
                                 <table className='mt-4'>

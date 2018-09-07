@@ -106,7 +106,7 @@ export default class Popup extends Component {
                             <button className='d-block mx-auto artx-btn artx-type-tw text-center text-white py-2 apx-13' type='button' onClick={() => this.setStep(1)}>Bid</button>
                         </div>
                     );
-                };
+                }
             case 4:
                 return (
                     <div className='mx-auto'>
@@ -119,7 +119,9 @@ export default class Popup extends Component {
                             <ReferLink link='uadsfafadf' account='false'/>
                             <ShareTo/>
                         </div>
-                        <label className='artx-type-et text-white mb-4 text-center' htmlFor='subscribeEmail'>Enter your email to receive ARTX airdrop invitations and auction game updates!</label>
+                        <div className='text-center'>
+                            <label className='artx-type-et text-white mb-4' htmlFor='subscribeEmail'>Enter your email to receive ARTX airdrop invitations and auction game updates!</label>
+                        </div>
                         <div className='artx-subscribe-input mx-auto amb-8'>
                             <input className='artx-type-tw py-3 pl-4 text-white border-0' type='email' id='subscribeEmail' placeholder='Email'/>
                         </div>
@@ -149,7 +151,7 @@ export default class Popup extends Component {
             <div>
                 <button className='d-block ml-auto artx-btn text-white artx-type-twf py-3 apx-14' onClick={() => this.setState({isOpen: true})}>Bid <i className="fas fa-gavel"></i></button>
                 { isOpen
-                ? <div className='artx-bid-container position-absolute artx-gradient-outter'>
+                ? <div className='artx-bid-container position-absolute mx-auto artx-gradient-outter'>
                     <div className='artx-progress-bar ml-auto' style={progBarWidth}></div>
                     <div className='artx-gradient-inner pt-4 apb-14 w-100'>
                         {

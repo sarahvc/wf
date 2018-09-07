@@ -27,6 +27,11 @@ export default class Above extends Component {
     componentDidMount() {
         this.setState({showPlay: true});
     }
+
+    componentWillUnmount() {
+        this.setState({showPlay: false});
+    }
+
     closePlay() {
         this.setState({showPlay: false});
     }
@@ -47,7 +52,7 @@ export default class Above extends Component {
                         </div>
                     : null
                 }
-                <div className='mt-5'> 
+                <div className='my-5'> 
                     <p className='text-right artx-gradient-text artx-type-twf'>Genesis, the first blockchain-bases artwork is now on auction</p>
                     <p className='artx-explaination ml-auto amy-8 text-right text-white artx-type-et'>Lot 001 Genesis<br/>Genesis is a crowdsourced and decentralized blockchain-based data visualization artwork that evolves in real-time. Your wallet address, bid amount and bid time will serve as data input for the creation<br/>of GENESIS.</p>
                     <p className='text-right artx-gradient-text artx-type-sf mb-3'><img className='align-middle mr-3' src={upcaret} alt='' aria-hidden='true'/>{currentPrice}<img className='align-baseline ml-3' src={eth} alt='ethereum icon'/></p>
