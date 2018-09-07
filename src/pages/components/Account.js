@@ -11,9 +11,9 @@ export default class Account extends Component {
   
       this.state = {
         //api
-        uName: 'Rickyyangyang',
+        uName: 'JaneJoe',
         walletAddr: 'jwefwe87…2kwefjefew7yr23ifu',
-        uEmail: 'Rickyyangyang@artx.io',
+        uEmail: 'janejoe@email.com',
         bid: 'XXX.xxxx',
         shares: 'XXX',
         referEarnings: 'XXX.xxxx',

@@ -96,7 +96,7 @@ export default class Popup extends Component {
                     return (
                         <div className='mx-auto artx-bid-content'>
                             <p className='artx-type-tw artx-gradient-text mb-1'>Last step!</p>
-                            <p className='artx-type-tw artx-gradient-text mb-3'>If someone refered you, enter their link to get 10% ETH bonus! <Info/></p>
+                            <p className='artx-type-tw artx-gradient-text mb-3'>If someone refered you, please enter their referral link to receive a 10% ETH bonus!<Info/></p>
                             <div className='mb-3'>
                                 <label className='artx-type-tw text-white' htmlFor='artxRLFI'>Referral Link</label>
                                 <input className='artx-bid-input-s artx-type-et text-white mx-2' id='artxRLFI' aria-describedby='artxRFLIO'/>
@@ -111,10 +111,10 @@ export default class Popup extends Component {
                 return (
                     <div className='mx-auto'>
                         <h3 className='text-center artx-type-ths artx-gradient-text mb-2'>Congratulations!</h3>
-                        <p className='text-center artx-type-et text-white mb-1'>Your bidding has been submitted to blockchain!</p>
-                        <p className='text-center artx-type-et text-white amb-8'>Check your status in <b>Personal Account</b> anytime!</p>
-                        <p className='text-center artx-type-et artx-gradient-text mb-1'>Here is your <b>Personal Refferal Link</b> share to others to win 10% of their bids!<Info/></p>
-                        <p className='text-center artx-type-et artx-gradient-text'>The more you reffered, the more you earn!</p>
+                        <p className='text-center artx-type-et text-white mb-1'>Your bid has been submitted to blockchain!</p>
+                        <p className='text-center artx-type-et text-white amb-8'>Check your <b>Personal Account</b> to see your status anytime!</p>
+                        <p className='text-center artx-type-et artx-gradient-text mb-1'>Here is your <b>Personal Refferal Link</b>. Share it with friends and win 10% of their bids!<Info/></p>
+                        <p className='text-center artx-type-et artx-gradient-text'>The more you refer, the more you earn!</p>
                         <div className='d-flex justify-content-center amb-9'>
                             <ReferLink link='uadsfafadf' account='false'/>
                             <ShareTo/>
