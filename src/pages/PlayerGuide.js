@@ -30,7 +30,7 @@ const PlayerGuide = () => (
                 <h2 className='artx-type-ths artx-gradient-text mt-5'>Details (internal)</h2>
                 <ul className='artx-type-twf text-white mt-3'>
                     <li className='artx-type-twf text-white'>All purchase and withdrawals are initiated by the players, so they pay for the gas. Dividends, bonus and jackpot will be credited to each player’s vault prior to withdrawal.</li>
-                    <li className='artx-type-twf text-white'>Token price formula: TBD (see fomo3d)</li>
+                    <li className='artx-type-twf text-white'>Token price formula: TBD</li>
                     <li className='artx-type-twf text-white'>The cap decay is calculated as such:</li>
                 </ul> 
             </div>
