@@ -16,14 +16,14 @@ const App =() => (
         <div className='position-relative'>
           <nav className="navbar navbar-expand-lg artx-header py-3 position-fixed w-100">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-              <i className="fas fa-bars artx-type-twf text-white"></i>
+              <i className="fas fa-bars artx-type-tw text-white"></i>
             </button>
             <div className="collapse navbar-collapse" id="menu">
               <ul className='navbar-nav mr-auto'>
-                  <li className='nav-item mr-5'><a className='nav-link artx-type-twf' href='/artx00/'>Game</a></li>
-                  <li className='nav-item mr-5'><a className='nav-link artx-type-twf' href='/artx00/about'>ARTX</a></li>
-                  <li className='nav-item mr-5'><a className='nav-link artx-type-twf' href='/artx00/community'>Community</a></li>
-                  <li className='nav-item mr-5'><a className='nav-link artx-type-twf' href='/artx00/auction-guide'>Auction Guide</a></li>
+                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/'>Game</a></li>
+                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/about'>ARTX</a></li>
+                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/community'>Community</a></li>
+                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/auction-guide'>Auction Guide</a></li>
               </ul>
             </div>
             <Account/>
