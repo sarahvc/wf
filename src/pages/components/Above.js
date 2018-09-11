@@ -7,6 +7,7 @@ import eth from '../../styles/assets/ethereum.svg';
 import ethgreen from '../../styles/assets/ethereumgreen.svg';
 import ethpurple from '../../styles/assets/ethereumpurple.svg';
 import '../../styles/scss/play.scss';
+import { callbackify } from 'util';
 
 export default class Above extends Component {
     constructor(props) {
@@ -16,7 +17,7 @@ export default class Above extends Component {
             //api
             diffAppraisal: '92347.283',
             currentPrice: '6543.826',
-            jackpot: '34059.3423', 
+            jackpot: '45424.3423', 
             rewards: '34059.3423'
         };
     };
@@ -30,9 +31,8 @@ export default class Above extends Component {
     // }
 
     render() {
-        const jpWidth = {
-            width: parseFloat(this.state.jackpot)/(parseFloat(this.state.jackpot) + parseFloat(this.state.rewards))*100 + '%'
-        };
+        const jpPercent = parseFloat(this.state.jackpot)/(parseFloat(this.state.jackpot) + parseFloat(this.state.rewards))*100 + '%';
+    
         const { diffAppraisal, currentPrice, jackpot, rewards } = this.state;
         return (
             <div className='position-relative pt-5'>
@@ -54,11 +54,11 @@ export default class Above extends Component {
                             <p className='artx-purple artx-type-et'>Rewards<br/>
                             {rewards}<img className='artx-purple align-top ml-1' src={ethpurple} alt='ethereum icon'/></p>
                         </div>
-                        <div className='artx-jackpot-percent d-flex w-100'>
-                            <div className='h-100' style={jpWidth}></div>
+                        <div className='artx-jackpot-percent artx-gradient-border-mockup d-flex jutstify-content-between w-100'>
+                            <div className='h-100 artx-gradient-border-mockup-inner' style={{width:`${jpPercent}`}}></div>
+                            <div className='h-100 artx-gradient-border-mockup-inner' style={{width: `calc( 100% - ${jpPercent} - 2px)`}}></div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         )

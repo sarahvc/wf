@@ -13,7 +13,7 @@ import './styles/scss/share.scss';
 
 const App =() => (
     <Router>
-      <div className='artx-gradient-bg pt-5'>
+      <div>
         <div className='position-relative'>
           <nav className="navbar navbar-expand-lg artx-header py-3 position-fixed w-100">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
@@ -23,8 +23,8 @@ const App =() => (
               <ul className='navbar-nav mr-auto'>
                   <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/'>Game</a></li>
                   <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/about'>ARTX</a></li>
-                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/community'>Community</a></li>
-                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/auction-guide'>Auction Guide</a></li>
+                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='https://t.me/joinchat/HimWUVCuDboToxV2Q-kOYQ'>Community</a></li>
+                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/auction-guide'>Player Guide</a></li>
               </ul>
             </div>
             <Account/>

@@ -5,7 +5,7 @@ import Bottom from './components/Bottom';
 import Footer from './atoms/Footer';
 
 const PlayPage = () => (
-    <div>
+    <div className='artx-gradient-ball-bg pt-5'>
         <div className='container'>
             <Above/>
             <Middle/>

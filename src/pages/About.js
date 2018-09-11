@@ -7,7 +7,7 @@ import creating from '../styles/assets/creatingasmining.png';
 
 const About = () => (
     <div>
-        <div>
+        <div className='artx-gradient-bg pt-5'>
             <img src={studio} className='amt-18 img-fluid' alt='ARTX LAB'/>
             <div className='container mt-4'>
                 <p className='artx-type-tw text-center text-white'>A Decentralized Art Ecosystem: Blockchain-based Protocol & dApps</p>

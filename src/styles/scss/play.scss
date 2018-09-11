@@ -1,13 +1,12 @@
 .artx-jackpot-percent {
+    box-sizing: content-box;
     height: 20px;
-    border-radius: 5px;
-    border: solid 2px;
-    border-image: linear-gradient(93deg, #43d7a7, #ad5ef3);
-    border-image-slice: 1;
-    div {
-        border-right: solid 2px;
-        border-image: linear-gradient(93deg, #43d7a7, #ad5ef3);
-        border-image-slice: 1;
+    div:first-child {
+        border-radius: 2px 0 0 3px;
+    }
+    div:last-child {
+        border-radius: 0 3px 3px 0;
+        margin-left: 2px;
     }
 }
 

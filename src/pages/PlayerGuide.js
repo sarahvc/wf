@@ -6,7 +6,7 @@ import '../styles/scss/guide.scss';
 
 const PlayerGuide = () => (
     <div>
-        <div>
+        <div className='artx-gradient-bg pt-5'>
             <div className='container'>
                 <h1 className='artx-type-fty artx-gradient-text text-center amt-18'>DArt Player Guide</h1>
                 <h2 className='artx-type-ths artx-gradient-text amt-18'>Summary</h2>

@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import ReferLink from '../atoms/ReferLink';
+import BidInputBtn from './BidInputBtn';
 import ShareTo from '../atoms/ShareTo';
 import Info from '../atoms/Info';
 import eth from '../../styles/assets/ethereum.svg';
@@ -12,60 +13,53 @@ export default class Popup extends Component {
         this.state = {
           //??should these be props or states??
           referred: true,
-          amount: 'xxx.xx',
+          sharePrice: 1.25,
+          average: 5,
+          maximum: 1000,
+          quickIn: '',
           //inside component
           step: 1,
-          isOpen: false
+          isOpen: false,
+          amount: null
         };
 
         this.bidSteps = this.bidSteps.bind(this);
         this.closeBid = this.closeBid.bind(this);
         this.setStep = this.setStep.bind(this);
+        this.quickInput = this.quickInput.bind(this);
+        this.input = React.createRef();
     };
 
+    quickInput(num) {
+        if (isNaN(num) === false) {
+            this.input.current.value = num;
+        } 
+        if (num === 'ave') {
+            this.input.current.value = this.state.average;
+        } 
+        if (num === 'max') {
+            this.input.current.value = this.state.maximum;
+        }
+        this.setState({amount: this.state.sharePrice * this.input.current.value});
+    }
+
     bidSteps(s, b) {
-        const { amount } = this.state;
         switch(s) {
             case 1:
                 return (
                     <div className='mx-auto'>
                         <p className='artx-type-tw text-center text-warning'>Please login to your Metamask first</p>
                         <p className='artx-type-et text-center artx-gradient-text mb-4'>Bid <i>Genesis</i> shares earlier and earn more dividends! <Info/></p>
-                        <div className='form-group text-center mb-4 '>
-                            <input className='artx-bid-input artx-type-et text-white mr-2' type='number' id='artxShares'/>
-                            <label className='artx-type-ths text-white' htmlFor='artxShares'>Shares = <span>{amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
+                        <div className='text-center mb-4 '>
+                            <input className='artx-bid-input artx-type-et text-white mr-2 pl-2 text-center' type='number' id='artxShares' ref={this.input}/>
+                            <label className='artx-type-twf text-white' htmlFor='artxShares'>Shares = <span>{this.state.amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
                         </div>
                         <div className='artx-shares-btn text-center amb-9'>
-                            <button className="mr-4">
-                                <span className='d-inline-block px-4 py-1'>
-                                    <span className='artx-type-tw artx-gradient-text'>1X
-                                    </span>
-                                </span>
-                            </button>
-                            <button className="mr-4">
-                                <span className='d-inline-block px-4 py-1'>
-                                    <span className='artx-type-tw artx-gradient-text'>10X
-                                    </span>
-                                </span>
-                            </button>
-                            <button className="mr-4">
-                                <span className='d-inline-block px-4 py-1'>
-                                    <span className='artx-type-tw artx-gradient-text'>100X
-                                    </span>
-                                </span>
-                            </button>
-                            <button className="mr-4">
-                                <span className='d-inline-block px-4 py-1'>
-                                    <span className='artx-type-tw artx-gradient-text'>AVE
-                                    </span>
-                                </span>
-                            </button>
-                            <button className="mr-4">
-                                <span className='d-inline-block px-4 py-1'>
-                                    <span className='artx-type-tw artx-gradient-text'>MAX
-                                    </span>
-                                </span>
-                            </button>
+                            <BidInputBtn label='1X' inputShares={() => this.quickInput(1)}/>
+                            <BidInputBtn label='10X' inputShares={() => this.quickInput(10)}/>
+                            <BidInputBtn label='100X' inputShares={() => this.quickInput(100)}/>
+                            <BidInputBtn label='AVE' inputShares={() => this.quickInput('ave')}/>
+                            <BidInputBtn label='MAX' inputShares={() => this.quickInput('max')}/>
                         </div>
                         <button className="d-block mx-auto artx-btn artx-type-et text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>Next</button>
                     </div>
@@ -76,9 +70,9 @@ export default class Popup extends Component {
                             <p className='artx-type-et artx-gradient-text amt-8 mb-1'>Now, guess the final hammer price of <i>Genesis</i>!</p>
                             <p className='artx-type-et artx-gradient-text amb-8'>The top 3 most accurate appraisers will win the <b>Appraisal Jackpot</b>!</p>
                             <div className='text-center amb-18'>
-                                <label className='artx-type-ths text-white mb-1' htmlFor='artxA'>Your Appraisal</label>
+                                <label className='artx-type-twf text-white mb-1' htmlFor='artxA'>Your Appraisal</label>
                                 <input className='artx-bid-input artx-type-et text-white ml-2' type='number' id='artxA' aria-describedby='artxAU'/>
-                                <img className='artx-eth-m align-text-bottom ml-2' src={eth} alt='ethereum icon'/>
+                                <img className='artx-eth-s align-text-bottom ml-2' src={eth} alt='ethereum icon'/>
                             </div>
                             <button className="d-block mx-auto artx-btn artx-type-et text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>Next</button>  
                         </div>
