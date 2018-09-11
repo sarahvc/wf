@@ -21,24 +21,24 @@ export default class Account extends Component {
         withdrawn: 'XXX.xxxx',
         availForWithdraw: 'XXX.xxxx',
         //inside component
-        eidtName: false,
+        eidtEmail: false,
         isOpen: false
       };
 
       this.triggerW = this.triggerW.bind(this);
-      this.changeName = this.changeName.bind(this);
+      this.changeEmail = this.changeEmail.bind(this);
     };
 
     triggerW() {
         return;
     };
 
-    changeName() {
-        this.setState(prevState => ({editName: !prevState.editName}));
+    changeEmail() {
+        this.setState(prevState => ({editEmail: !prevState.editEmail}));
     }
 
     render() {
-        const {uName, walletAddr, uEmail, bid, shares, referEarnings, totalEarnings, withdrawn, availForWithdraw, editName, isOpen} = this.state;
+        const {walletAddr, uEmail, bid, shares, referEarnings, totalEarnings, withdrawn, availForWithdraw, editEmail, isOpen} = this.state;
         return (
             <div>
                 <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><i className="far fa-user artx-gradient-text artx-type-tw"></i><span className='artx-gradient-text artx-type-tw d-none d-lg-inline'> Personal Account</span></button>
@@ -51,35 +51,25 @@ export default class Account extends Component {
                             </button>
                             <div className='mt-2'>
                                 <form>
-                                    <div className="form-group">
-                                        <label htmlFor="artxAN" className="artx-type-tw text-white artx-yellow-dot">Account Name</label>
-                                            { editName
-                                            ? <div className="d-flex justify-content-between border-bottom">
-                                                <input type="text" className="artx-type-et text-white border-0 w-100" id="artxAN" defaultValue={uName}/>
-                                                <button className="artx-btn text-white p-2" type='submit' onClick={this.changeName}>Submit</button>
-                                            </div>
-                                            : <div className="d-flex justify-content-between border-bottom">
-                                                <input type="text" readOnly  className="artx-type-et text-white border-0 w-100" id="artxAN" value={uName}/>
-                                                <button className="artx-icon-btn" onClick={this.changeName} aria-label='edit account name' type='button'>
-                                                    <i className="far fa-edit artx-type-tw artx-gradient-text"></i>
-                                                </button>
-                                            </div>}
-                                    </div>
-            
                                     <div className="form-group mt-3">
                                         <label  htmlFor="artxWA" className="artx-type-tw text-white">Wallet Address</label>
                                         <div className="border-bottom">
                                             <input type="text" readOnly className="artx-type-et text-white border-0 w-100" id="artxWAd" value={walletAddr}/>
                                         </div>
                                     </div>
-                                    <div className="form-group mt-3">
-                                        <label  htmlFor="artxE" className="artx-type-tw text-white artx-yellow-dot">Email</label>
-                                        <div className="d-flex justify-content-between border-bottom">
-                                            <input type="email" readOnly className="artx-type-et text-white border-0 w-100" id="artxE" value={uEmail}/>
-                                            <button className="artx-icon-btn" onClick={this.changeName} aria-label='email address verified' type='button'>
-                                                <i className="fas fa-check"></i>
-                                            </button>
-                                        </div>
+                                    <div className="form-group">
+                                        <label htmlFor="artxAN" className="artx-type-tw text-white artx-yellow-dot">Account Name</label>
+                                            { editEmail
+                                            ? <div className="d-flex justify-content-between border-bottom">
+                                                <input type="text" className="artx-type-et text-white border-0 w-100" id="artxAN" defaultValue={uEmail}/>
+                                                <button className="artx-btn text-white p-2" type='submit' onClick={this.changeEmail}>Submit</button>
+                                            </div>
+                                            : <div className="d-flex justify-content-between border-bottom">
+                                                <input type="text" readOnly  className="artx-type-et text-white border-0 w-100" id="artxAN" value={uEmail}/>
+                                                <button className="artx-icon-btn" onClick={this.changeEmail} aria-label='edit account name' type='button'>
+                                                    <i className="far fa-edit artx-type-tw artx-gradient-text"></i>
+                                                </button>
+                                            </div>}
                                     </div>
                                     <div className="form-group mt-3">
                                         <label htmlFor="artxRL" className="artx-type-tw text-white">Personal Referral Link</label>
