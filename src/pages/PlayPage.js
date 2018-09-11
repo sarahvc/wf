@@ -4,7 +4,7 @@ import Middle from './components/Middle';
 import Bottom from './components/Bottom';
 import Footer from './atoms/Footer';
 
-const Play = () => (
+const PlayPage = () => (
     <div>
         <div className='container'>
             <Above/>
@@ -14,4 +14,4 @@ const Play = () => (
         <Footer/>
     </div> 
 );
-export default Play;
+export default PlayPage;

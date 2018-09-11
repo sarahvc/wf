@@ -79,7 +79,7 @@ export default class Account extends Component {
                                     </div>
                                 </form>
                                 <div className='d-flex mt-4'>
-                                    <p className='artx-type-et text-white mr-3'>Share to</p>
+                                    <p className='artx-type-et text-white mr-2'>Share to</p>
                                     <ShareTo/>
                                 </div>
                                 <table className='mt-4'>

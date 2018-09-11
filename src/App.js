@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Account from './pages/components/Account';
-import Play from './pages/Play';
+import PlayPage from './pages/PlayPage';
 import About from './pages/About';
 import PlayerGuide from './pages/PlayerGuide';
 //import logo from './styles/assets/logo.svg';
@@ -9,6 +9,7 @@ import './styles/scss/App.css';
 import './styles/scss/header.scss';
 import './styles/scss/shared.scss';
 import './styles/scss/spacing.scss';
+import './styles/scss/share.scss';
 
 const App =() => (
     <Router>
@@ -29,7 +30,7 @@ const App =() => (
             <Account/>
           </nav>
         </div>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={Play} />
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={PlayPage} />
         <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
         <Route path={process.env.PUBLIC_URL + '/auction-guide'} component={PlayerGuide} />
       </div>
