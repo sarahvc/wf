@@ -27,20 +27,33 @@ export default class Popup extends Component {
         this.closeBid = this.closeBid.bind(this);
         this.setStep = this.setStep.bind(this);
         this.quickInput = this.quickInput.bind(this);
-        this.input = React.createRef();
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     };
 
     quickInput(num) {
         if (isNaN(num) === false) {
-            this.input.current.value = num;
+            this.setState({value: num});
+            this.setState({amount: this.state.sharePrice * num});
         } 
         if (num === 'ave') {
-            this.input.current.value = this.state.average;
+            this.setState({value: this.state.average});
+            this.setState({amount: this.state.sharePrice * this.state.average});
         } 
         if (num === 'max') {
-            this.input.current.value = this.state.maximum;
-        }
-        this.setState({amount: this.state.sharePrice * this.input.current.value});
+            this.setState({value: this.state.maximum});
+            this.setState({amount: this.state.sharePrice * this.state.maximum});
+        } 
+        
+    }
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+        this.setState({amount: this.state.sharePrice * event.target.value});
+    }
+    
+    handleSubmit(event) {
+        event.preventDefault();
     }
 
     bidSteps(s, b) {
@@ -51,7 +64,7 @@ export default class Popup extends Component {
                         <p className='artx-type-tw text-center text-warning'>Please login to your Metamask first</p>
                         <p className='artx-type-et text-center artx-gradient-text mb-4'>Bid <i>Genesis</i> shares earlier and earn more dividends! <Info/></p>
                         <div className='text-center mb-4 '>
-                            <input className='artx-bid-input artx-type-et text-white mr-2 pl-2 text-center' type='number' id='artxShares' ref={this.input}/>
+                            <input className='artx-bid-input artx-type-et text-white mr-2 pl-2 text-center' type='number' id='artxShares' value={this.state.value} onChange={this.handleChange}/>
                             <label className='artx-type-twf text-white' htmlFor='artxShares'>Shares = <span>{this.state.amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
                         </div>
                         <div className='artx-shares-btn text-center amb-9'>
@@ -71,7 +84,7 @@ export default class Popup extends Component {
                             <p className='artx-type-et artx-gradient-text amb-8'>The top 3 most accurate appraisers will win the <b>Appraisal Jackpot</b>!</p>
                             <div className='text-center amb-18'>
                                 <label className='artx-type-twf text-white mb-1' htmlFor='artxA'>Your Appraisal</label>
-                                <input className='artx-bid-input artx-type-et text-white ml-2' type='number' id='artxA' aria-describedby='artxAU'/>
+                                <input className='artx-bid-input artx-type-et text-white ml-2 pl-2' type='number' id='artxA' aria-describedby='artxAU'/>
                                 <img className='artx-eth-s align-text-bottom ml-2' src={eth} alt='ethereum icon'/>
                             </div>
                             <button className="d-block mx-auto artx-btn artx-type-et text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>Next</button>  
