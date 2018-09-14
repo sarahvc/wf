@@ -58,7 +58,7 @@ export default class Account extends Component {
                                         </div>
                                     </div>
                                     <div className="form-group">
-                                        <label htmlFor="artxAN" className="artx-type-tw text-white artx-yellow-dot">Account Name</label>
+                                        <label htmlFor="artxAN" className="artx-type-tw text-white artx-yellow-dot">Email</label>
                                             { editEmail
                                             ? <div className="d-flex justify-content-between border-bottom">
                                                 <input type="text" className="artx-type-et text-white border-0 w-100" id="artxAN" defaultValue={uEmail}/>
@@ -95,7 +95,7 @@ export default class Account extends Component {
                                         <AccountTR label='Referral' content={referEarnings}/>
                                         <AccountTR label='Total Earnings' content={totalEarnings}/>
                                         <AccountTR label='Withdrawn' content={withdrawn}/>
-                                        <AccountTR label='Available for withdraw' content={availForWithdraw}/>
+                                        <AccountTR label='Available for Withdraw' content={availForWithdraw}/>
                                     </tbody>
                                 </table>
                                 <button className='w-100 artx-btn artx-type-tw text-white amt-8 py-2' onClick={this.triggerW} type='button'>Withdraw</button>
