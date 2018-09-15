@@ -7,7 +7,7 @@ import eth from '../../styles/assets/ethereum.svg';
 import ethgreen from '../../styles/assets/ethereumgreen.svg';
 import ethpurple from '../../styles/assets/ethereumpurple.svg';
 import '../../styles/scss/play.scss';
-import { callbackify } from 'util';
+import DataViz from './DataViz';
 
 export default class Above extends Component {
     constructor(props) {
@@ -38,10 +38,16 @@ export default class Above extends Component {
             <div className='position-relative pt-5'>
                 <PlayPopup/>
                 <div className='my-5'> 
-                    <p className='text-right artx-gradient-text artx-type-tw'><i>Genesis</i>, the first blockchain-based artwork is now on auction!</p>
-                    <p className='artx-explaination ml-auto amy-8 text-right text-white artx-type-st'>Lot 001 <i>Genesis</i><br/><i>Genesis</i> is a crowdsourced and decentralized blockchain-based data visualization artwork that evolves in real-time. Your wallet address, bid amount and bid time will serve as data input for the creation<br/>of <i>Genesis</i>.</p>
-                    <p className='text-right artx-gradient-text artx-type-fs mb-3'><img className='align-middle mr-3' src={upcaret} alt='' aria-hidden='true'/>{currentPrice}<img className='align-baseline ml-3' src={eth} alt='ethereum icon'/></p>
-                    <BidPopup/>
+                    <div className='position-relative'>
+                        <DataViz/>
+                        <div className='position-absolute artx-intro'>
+                            <p className='text-right artx-gradient-text artx-type-tw'><i>Genesis</i>, the first blockchain-based artwork is now on auction!</p>
+                            <p className='artx-explaination ml-auto amy-8 text-right text-white artx-type-st'>Lot 001 <i>Genesis</i><br/><i>Genesis</i> is a crowdsourced and decentralized blockchain-based data visualization artwork that evolves in real-time. Your wallet address, bid amount and bid time will serve as data input for the creation<br/>of <i>Genesis</i>.</p>
+                            <p className='text-right artx-gradient-text artx-type-fs mb-3'><img className='align-middle mr-3' src={upcaret} alt='' aria-hidden='true'/>{currentPrice}<img className='align-baseline ml-3' src={eth} alt='ethereum icon'/></p>
+                            <BidPopup/>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div>
                     <p className='artx-type-tw artx-gradient-text'>Auction Hardcap Remaining <Info/></p>

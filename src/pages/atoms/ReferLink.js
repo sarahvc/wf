@@ -27,7 +27,7 @@ class ReferLink extends Component {
         const subClass = this.props.account === 'true' ? 'artx-refer-account' : 'artx-refer-popup';
         return (
             <div className={subClass}>
-                { this.state.copied && <span className='position-absolute artx-dark-bg px-2 text-warning rounded'>Referrak link copied!</span>}
+                { this.state.copied && <span className='position-absolute artx-dark-bg px-2 text-warning rounded'>Referral link copied!</span>}
                 <input type='text' readOnly 
                 className={
                     this.props.account
