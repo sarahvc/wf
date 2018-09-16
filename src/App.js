@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Account from './pages/components/Account';
-import DataViz from './pages/components/DataViz';
 import PlayPage from './pages/PlayPage';
 import About from './pages/About';
 import PlayerGuide from './pages/PlayerGuide';
@@ -26,7 +25,6 @@ const App =() => (
                   <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/about'>ARTX</a></li>
                   <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='https://t.me/joinchat/HimWUVCuDboToxV2Q-kOYQ'>Community</a></li>
                   <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/auction-guide'>Player Guide</a></li>
-                  <li className='nav-item mr-5'><a className='nav-link artx-type-tw' href='/artx00/data-viz'>Data Viz</a></li>
               </ul>
             </div>
             <Account/>
@@ -35,7 +33,6 @@ const App =() => (
         <Route exact path={process.env.PUBLIC_URL + '/'} component={PlayPage} />
         <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
         <Route path={process.env.PUBLIC_URL + '/auction-guide'} component={PlayerGuide} />
-        <Route path={process.env.PUBLIC_URL + '/data-viz'} component={DataViz} />
       </div>
     </Router>
 );

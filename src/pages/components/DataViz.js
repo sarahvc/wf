@@ -8,7 +8,7 @@ source: referral address,
 target: referred address
 */
 import React, { Component } from 'react';
-import { ForceGraph3D } from 'react-force-graph';
+import ForceGraph3D from './ForceGraph3D';
 import '../../styles/scss/data-viz.scss';
 
 export default class DataViz extends Component {
