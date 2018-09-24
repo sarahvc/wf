@@ -1,7 +1,8 @@
 import React from 'react';
+import helpicon from '../../styles/assets/help.svg';
 
 const Info = () => (
-    <i className="far fa-question-circle align-text-top artx-gradient-text"></i>
+    <img className='align-baseline ml-1 position-absolute artx-help-icon' src={helpicon} alt='help'/>
 );
 
 export default Info;

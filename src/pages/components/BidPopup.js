@@ -62,7 +62,7 @@ export default class Popup extends Component {
                 return (
                     <div className='mx-auto'>
                         <p className='artx-type-tw text-center text-warning'>Please login to your Metamask first</p>
-                        <p className='artx-type-et text-center artx-gradient-text mb-4'>Bid <i>Genesis</i> shares earlier and earn more dividends! <Info/></p>
+                        <p className='artx-type-et text-center artx-gradient-text mb-4 position-relative'>Bid <i>Genesis</i> shares earlier and earn more dividends! <Info/></p>
                         <div className='text-center mb-4 '>
                             <input className='artx-bid-input artx-type-et text-white mr-2 pl-2 text-center' type='number' id='artxShares' value={this.state.value} onChange={this.handleChange}/>
                             <label className='artx-type-twf text-white' htmlFor='artxShares'>Shares = <span>{this.state.amount}</span><img className='artx-eth-s align-baseline ml-2' src={eth} alt='ethereum icon'/></label>
@@ -80,6 +80,7 @@ export default class Popup extends Component {
             case 2:
                     return (
                         <div className='mx-auto artx-bid-content'>
+                            <p className='artx-type-twf text-white text-center'>23223 Shares = 0.2348 <img className='artx-eth-s align-text-bottom ml-2' src={eth} alt='ethereum icon'/></p>
                             <p className='artx-type-et artx-gradient-text amt-8 mb-1'>Now, guess the final hammer price of <i>Genesis</i>!</p>
                             <p className='artx-type-et artx-gradient-text amb-8'>The top 3 most accurate appraisers will win the <b>Appraisal Jackpot</b>!</p>
                             <div className='text-center amb-18'>
@@ -94,9 +95,11 @@ export default class Popup extends Component {
                 if (b === true) {
                     return (
                         <div className='mx-auto artx-bid-content'>
+                            <p className='artx-type-twf text-white text-center'><span className='artx-type-et'>You're buying</span> <span>23223</span> Shares = <span>0.2348</span> <img className='artx-eth-s align-text-bottom ml-2' src={eth} alt='ethereum icon'/></p>
+                            <p className='artx-type-twf text-white text-center'><span className='artx-type-et'>Your Appraisal is</span> <span>12573</span><img className='artx-eth-s align-text-bottom ml-2' src={eth} alt='ethereum icon'/></p>
                             <p className='artx-type-tw artx-gradient-text mb-4'>Good news! You will receive a 10% bonus because you are referred by a friend!</p>
                             <p className='artx-type-tw text-center text-warning amb-8'>NOTICE:  Login to Metamask to try again!</p>
-                            <button className="d-block mx-auto artx-btn artx-type-et text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>Bid</button>
+                            <button className="d-block mx-auto artx-btn artx-type-et text-center text-white py-2 apx-13" type='button' onClick={() => this.setStep(1)}>BID</button>
                         </div>
                     );
                 } else {
@@ -119,8 +122,8 @@ export default class Popup extends Component {
                     <div className='mx-auto'>
                         <h3 className='text-center artx-type-ths artx-gradient-text mb-2'>Congratulations!</h3>
                         <p className='text-center artx-type-st text-white mb-1'>Your bid has been submitted to blockchain.</p>
-                        <p className='text-center artx-type-st text-white amb-8'>Check your <b>Personal Account</b> to see your status anytime!</p>
-                        <p className='text-center artx-type-st artx-gradient-text mb-1'>Here is your <b>Personal Referral Link</b>.<Info/></p>
+                        <p className='text-center artx-type-st text-white amb-8'>Check <b>Personal Account</b> to see your status anytime!</p>
+                        <p className='text-center artx-type-st artx-gradient-text mb-1 position-relative'>Here is your <b>Personal Referral Link</b>.<Info/></p>
                         <p className='text-center artx-type-st artx-gradient-text mb-1'>Share it with friends and win 10% of their bids!</p>
                         <p className='text-center artx-type-st artx-gradient-text'>The more you refer, the more you earn!</p>
                         <div className='d-flex justify-content-center amb-9'>
@@ -157,7 +160,7 @@ export default class Popup extends Component {
         const {referred, step, isOpen} = this.state;
         return (
             <div>
-                <button className='d-block ml-auto artx-btn text-white artx-type-tw py-3 apx-14' onClick={() => this.setState({isOpen: true})}>Bid <i className="fas fa-gavel"></i></button>
+                <button className='d-block ml-auto artx-btn text-white artx-type-tw py-3 apx-14' onClick={() => this.setState({isOpen: true})}>BID</button>
                 { isOpen
                 ? <div className='artx-bid-container position-absolute mx-auto artx-gradient-outter'>
                     <div className='artx-progress-bar ml-auto' style={progBarWidth}></div>

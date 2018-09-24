@@ -41,7 +41,7 @@ export default class Account extends Component {
         const {walletAddr, uEmail, bid, shares, referEarnings, totalEarnings, withdrawn, availForWithdraw, editEmail, isOpen} = this.state;
         return (
             <div>
-                <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><i className="far fa-user artx-gradient-text artx-type-tw"></i><span className='artx-gradient-text artx-type-tw d-none d-lg-inline'> Personal Account</span></button>
+                <button className='border-0 bg-transparent' type='button' onClick={() => this.setState({isOpen: true})}><span className='artx-gradient-text artx-type-tw d-none d-lg-inline'> Personal Account</span></button>
                 {
                     isOpen
                     ? <div className='artx-account-container position-absolute artx-gradient-outter'>
