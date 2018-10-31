@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="234" height="60" viewBox="0 0 234 60">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -4)">
+    <g transform="translate(76)">
+      <text fill="#000" font-family="Nunito-SemiBold, Nunito" font-size="32" font-weight="500">
+        <tspan x="0" y="32">WEI FANG</tspan>
+      </text>
+      <text fill="#000" font-family="Nunito-Regular, Nunito" font-size="18">
+        <tspan x="1" y="60">Full Stack Designer</tspan>
+      </text>
+      <path stroke="#000" d="M0,40 L158,40"/>
+    </g>
+    <g transform="translate(0 4)">
+      <rect width="60" height="60" fill="#8AC926" fill-rule="nonzero" rx="8"/>
+      <g transform="translate(6.176 15.882)">
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="4" d="M19.4117647,0 L33.4566335,28.4910196"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="4" d="M33.5294118,0 L47.5742806,28.4910196" transform="matrix(-1 0 0 1 81.104 0)"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="4" d="M0,0 L14.0448688,28.4910196"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="4" d="M14.8544435,8.82352941 L24.5603259,28.4910196" transform="matrix(-1 0 0 1 38.678 0)"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="4" d="M9.70588235,0 L19.3389865,19.6674902" transform="matrix(-1 0 0 1 29.118 0)"/>
+      </g>
+    </g>
+  </g>
+</svg>

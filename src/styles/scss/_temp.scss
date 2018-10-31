@@ -1,0 +1,19 @@
+$themecolors: (
+    orange: #ff595e,
+    yellow: #FFCA3A,
+    green: #8AC926,
+    blue: #1982C4,
+    purple: #6A4C93
+);
+
+@each $colorName, $color in $themecolors {
+    .bg-#{$colorName} {
+        background-color: $color;
+    } 
+}
+
+@each $colorName, $color in $themecolors {
+    .text-#{$colorName} {
+        color: $color;
+    } 
+}

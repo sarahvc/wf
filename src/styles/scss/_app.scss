@@ -2,3 +2,108 @@
 @import '_aboutmepage.scss';
 @import '_resumepage.scss';
 @import '_projectpage.scss';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-yrsa {
+  font-family: 'Yrsa', serif;
+}
+
+.font-ptsans {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.font-rosario {
+  font-family: 'Rosario', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.bg-orange {
+    background-color: #ff595e;
+  }
+  
+  .bg-yellow {
+    background-color: #FFCA3A;
+  }
+  
+  .bg-green {
+    background-color: #8AC926;
+  }
+  
+  .bg-blue {
+    background-color: #1982C4;
+  }
+  
+  .bg-purple {
+    background-color: #6A4C93;
+  }
+
+  .text-orange {
+    color: #ff595e;
+  }
+  
+  .text-yellow {
+    color: #FFCA3A;
+  }
+  
+  .text-green {
+    color: #8AC926;
+  }
+  
+  .text-blue {
+    color: #1982C4;
+  }
+  
+  .text-purple {
+    color: #6A4C93;
+  }
+
+  .bg-trans-orange {
+    background-color: rgba(255, 89, 94, 0.7);
+  }
+  
+  .bg-trans-yellow {
+    background-color: rgba(255, 202, 58, 0.7);
+  }
+  
+  .bg-trans-green {
+    background-color: rgba(128, 201, 38, 0.7);
+  }
+  
+  .bg-trans-blue {
+    background-color: rgba(25, 130, 196, 0.8);
+  }
+  
+  .bg-trans-purple {
+    background-color: rgba(106, 76, 147, 0.7);
+  }
+  
+  .text-trans-orange {
+    color: rgba(255, 89, 94, 0.7);
+  }
+  
+  .text-trans-yellow {
+    color: rgba(255, 202, 58, 0.7);
+  }
+  
+  .text-trans-green {
+    color: rgba(128, 201, 38, 0.7);
+  }
+  
+  .text-trans-blue {
+    color: rgba(25, 130, 196, 0.7);
+  }
+  
+  .text-trans-purple {
+    color: rgba(106, 76, 147, 0.7);
+  }
+  
