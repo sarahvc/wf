@@ -4,9 +4,12 @@ import Thumbnail from './components/Thumbnail';
 import pnc from '../styles/assets/pncthumbnail.png';
 import shoppinglist from '../styles/assets/shoppinglistthumbnail.png';
 import personae from '../styles/assets/personamockup.png';
+import Menu from './components/Menu';
+
 
 const Work = () => (
     <div>
+        <Menu main={true}/>
         <main className='container'>
             <div className='fw-skillset d-flex flex-column flex-md-row justify-content-center mt-4 mb-5'>
                 <div className='position-relative'>
@@ -19,7 +22,7 @@ const Work = () => (
                 </div>
             </div>
             <div className='row'>
-                <Thumbnail bgcolor='bg-trans-blue' img={pnc} title='PNC COMMERCIAL CARD' brief='Making the corporate card onboarding easier for both ends.'/>
+                <Thumbnail bgcolor='bg-trans-blue' img={pnc} title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
                 <Thumbnail bgcolor='bg-trans-orange' img={shoppinglist} title='SOCIALIZED SHOPPING LIST' brief='a unified system'/>
                 <Thumbnail bgcolor='bg-trans-yellow' img={personae} title='ONLINE SHOPPING PERSONAE' brief='a unified system'/>
                 <Thumbnail bgcolor='bg-trans-purple' img={pnc} title='EZMOTO INC.' brief='a unified system'/>

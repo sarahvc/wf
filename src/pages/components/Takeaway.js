@@ -5,7 +5,7 @@ class Takeaway extends Component {
     render() {
         return (
             <div className='col-12 col-md-4'>
-                <h3>{this.props.title}</h3>
+                <h3 className='font-nunito'>{this.props.title}</h3>
                 <p>{this.props.content}</p>
             </div>
         );

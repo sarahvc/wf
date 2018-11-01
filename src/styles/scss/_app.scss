@@ -106,4 +106,45 @@ body {
   .text-trans-purple {
     color: rgba(106, 76, 147, 0.7);
   }
-  
+
+.nav-link {
+  color: black;
+}
+
+.nav-link.active::before {
+  content: '';
+  width: 10px;
+  height: 16px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 13px;
+  left: -8px;
+  @extend .bg-green;
+}
+
+.fw-small-logo {
+  width: 40px;
+  margin-top: -4px;
+}
+ 
+
+.text-dark-blue {
+  color: #135F8F;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+h2 {
+  @extend .font-nunito;
+  font-size: 1.5rem;
+}
+
+h3 {
+  @extend .font-nunito;
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
