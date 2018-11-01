@@ -8,7 +8,7 @@ import Menu from './components/Menu';
 
 
 const Work = () => (
-    <div>
+    <div className='fw-building position-relative'>
         <Menu main={true}/>
         <main className='container'>
             <div className='fw-skillset d-flex flex-column flex-md-row justify-content-center mt-4 mb-5'>
