@@ -6,11 +6,11 @@ class Overview extends Component {
         return (
             <div>
                 <div className='position-relative fw-overview-wrapper'>
-                    <div className='position-absolute fw-bg-pnc h-100 w-100'>
-                        <div className='container mt-5'>
+                    <div className='position-absolute fw-bg h-100 w-100 d-flex align-items-center'>
+                        <div className='container'>
                             <h1 className='font-yrsa text-white text-center'>{this.props.title}</h1>
                             <div className='mt-5'>
-                                <q className='font-yrsa text-white'>{this.props.quote}</q>
+                                <q className='font-yrsa text-white text-center d-block'>{this.props.quote}</q>
                                 <p className='font-yrsa text-white fw-quote-source text-center mt-3'>{this.props.source}</p>
                             </div>
                         </div>

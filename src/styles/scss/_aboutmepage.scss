@@ -1,0 +1,28 @@
+.fw-aboutme {
+    @media (min-width: 768px) {
+        text-align: right;
+    }
+}
+
+.fw-contact {
+    a:not(:last-child){
+    margin-right: 12px;
+    &::after {
+        content: "|";
+        font-size: 1em;
+        margin-left: 10px;
+    }
+    }
+    a:hover {
+        color:  #65931C;
+    }
+    a:active {
+        color:  #3F5C12;
+    } 
+} 
+
+.fw-aboutme-img {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+}

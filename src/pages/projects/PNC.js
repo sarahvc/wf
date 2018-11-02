@@ -26,10 +26,10 @@ import homesa from '../../styles/assets/sa1.gif';
 import hometmo from '../../styles/assets/tmo.gif';
 import hometmo2 from '../../styles/assets/tmo2.gif';
 
-import pncsb00 from '../../styles/assets/pncsb00.jpg';
+import pncsb00 from '../../styles/assets/pncsb00.png';
 import pncsb01 from '../../styles/assets/pncsb01.jpg';
-import pncsb02 from '../../styles/assets/pncsb02.jpg';
-import pncsb03 from '../../styles/assets/pncsb03.jpg';
+import pncsb02 from '../../styles/assets/pncsb02.png';
+import pncsb03 from '../../styles/assets/pncsb03.png';
 
 import clientvideo from '../../styles/assets/client-portal.mp4';
 
@@ -72,18 +72,6 @@ const PNC = () => (
                         <p>Along with the Keystone, we drew a service blueprint to demonstrate the streamlined the work flow. In the model, we show the interaction between 10 teams in the four-stage onboarding process. (Below is the blurred model to protect the business information.)</p>
                     </div>
                     <div className='col-12'>
-                        <img src={pncsb00} alt='' className='img-fluid'/>
-                    </div>
-                    <div className='col-12'>
-                        <img src={pncsb01} alt='' className='img-fluid'/>
-                    </div>
-                    <div className='col-12'>
-                        <img src={pncsb02} alt='' className='img-fluid'/>
-                    </div>
-                    <div className='col-12'>
-                        <img src={pncsb03} alt='' className='img-fluid'/>
-                    </div>
-                    <div className='col-12'>
                         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
@@ -100,12 +88,16 @@ const PNC = () => (
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
+                                <div>
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Previous</span>
+                                </div>
                             </a>
                             <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
+                                <div>
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Next</span>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -130,9 +122,6 @@ const PNC = () => (
             </div>
         </main>
         <Footer/>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossOrigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossOrigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossOrigin="anonymous"></script>
     </div>
 );
 

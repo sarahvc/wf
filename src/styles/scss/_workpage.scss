@@ -48,28 +48,38 @@
 }
 
 .fw-skillset {
+    height: 160px;
     div {
-        height: 160px;
-        @media (max-width: 768px) {
+        width: 50%;
+        @media (max-width: 992px) {
             width: 100%;
         }
     }
-    p {
-        font-size: 2rem;
+    p.font-nunito {
+        font-size: 1.5rem;
         font-weight: 900;
-        opacity: 0.2;
+        opacity: 0.2; 
     }
-    span {
+    .fw-skills {
+        position: relative;
         font-size: 1rem;
-        opacity: 0.9;
-        //text-shadow: 2px 2px 1px #dedede;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 277px;
+            height: 1em;
+            border-radius: 3px;
+        }
     }
-    .fw-skills-a {
-        top: 0.8rem;
-        right: 1rem;
+    .fw-skills-a::after {
+        right: 0;
+        top: 0.7rem;
+        background-color: rgba(255, 89, 94, 0.2);
     }
-    .fw-skills-b {
-        bottom: 0.8rem;
-        left: 1rem;
+
+    .fw-skills-b::after {
+        left: 0;
+        top: -0.2rem;
+        background-color: rgba(25, 130, 196, 0.2);
     }
 }

@@ -5,22 +5,14 @@ import pnc from '../styles/assets/pncthumbnail.png';
 import shoppinglist from '../styles/assets/shoppinglistthumbnail.png';
 import personae from '../styles/assets/personamockup.png';
 import Menu from './components/Menu';
+import Skillset from './components/Skillset';
 
 
 const Work = () => (
     <div>
         <Menu main={true}/>
         <main className='container'>
-            <div className='fw-skillset d-flex flex-column flex-md-row justify-content-center mt-4 mb-5'>
-                <div className='position-relative'>
-                    <p className='text-orange mb-0 font-nunito'>DO THE RIGHT THINGS</p>
-                    <span className='position-absolute fw-skills-a text-right'>User Research<br/>Market research<br/>Data analysis</span>
-                </div>
-                <div className='position-relative d-flex'>
-                    <p className='text-blue mb-0 mt-auto align-item-end ml-auto mr-0 text-right font-nunito'>DO THE THINGS RIGHT</p>
-                    <span className='position-absolute fw-skills-b'>Interaction design, Usability test<br/>Prototyping, Front end development<br/>Project management</span>
-                </div>
-            </div>
+            <Skillset/>
             <div className='row'>
                 <Thumbnail bgcolor='bg-trans-blue' img={pnc} title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
                 <Thumbnail bgcolor='bg-trans-orange' img={shoppinglist} title='SOCIALIZED SHOPPING LIST' brief='a unified system'/>
