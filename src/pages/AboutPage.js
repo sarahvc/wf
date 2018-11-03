@@ -23,7 +23,7 @@ const About = () => (
         <div className='container mt-5'>
             <div className='row mb-4'>
                 <div className='col-12 col-md-4 d-flex'>
-                    <h1 className='fw-aboutme-title font-nunito text-right w-100 align-self-end'>ON<br/>THE<br/>STAGE</h1>
+                    <h1 className='fw-aboutme-title font-nunito text-right w-100 align-self-end mb-0'>ON<br/>THE<br/>STAGE</h1>
                 </div>
                 <div className='col-12 col-md-4'>
                     <img className="d-block w-100 border rounded-0" src={bnsh} alt=""/>
