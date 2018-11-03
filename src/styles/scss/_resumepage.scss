@@ -1,0 +1,7 @@
+.fw-resume-container {
+    margin: 0 auto;
+    width: 614px;
+    @media (max-width: 615px) {
+        width: 100%;
+    }
+}

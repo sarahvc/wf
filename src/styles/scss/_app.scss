@@ -152,3 +152,17 @@ img {
   border-radius: 10px;
 }
 
+a.text-green {
+  &:hover {
+    color:  #65931C;
+}
+  &:active {
+    color:  #3F5C12;
+  } 
+}
+
+.fw-square {
+  width: 100%;
+  padding-bottom: 100%;
+}
+

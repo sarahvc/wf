@@ -1,9 +1,3 @@
-.fw-aboutme {
-    @media (min-width: 768px) {
-        text-align: right;
-    }
-}
-
 .fw-contact {
     a:not(:last-child){
     margin-right: 12px;
@@ -13,16 +7,43 @@
         margin-left: 10px;
     }
     }
-    a:hover {
-        color:  #65931C;
-    }
-    a:active {
-        color:  #3F5C12;
-    } 
 } 
 
 .fw-aboutme-img {
     border-radius: 0;
     width: 100%;
     height: auto;
+    opacity: 0.6;
+}
+
+.fw-aboutme-container {
+    padding: 48px 0 68px 0;
+    background-size: cover, cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('http://localhost:3000/aboutme.png');
+    .fw-aboutme {
+        padding: 3rem 1rem 1rem 3rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: relative;
+        z-index: 2;
+        &::after{
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: -30px;
+            right: -20px;
+            background-color: rgba(128, 201, 38, 0.4);
+            z-index: -1;
+        }
+    }
+}
+
+.fw-aboutme-title {
+    font-size: 3.5rem;
+}
+
+.fw-aboutme-decor {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 130, 196, 0.1);
 }

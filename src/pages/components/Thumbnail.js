@@ -7,7 +7,7 @@ class Thumbnail extends Component {
         return (
             <div className='col-12 col-md-6 col-lg-4 mb-4'>
                 <a className='fw-thumbnail-link' href='/projects/pnc' alt=''>
-                    <div className='position-relative fw-thumbnail-wrapper mb-2'>
+                    <div className='position-relative fw-thumbnail-wrapper fw-square mb-2'>
                         <div className={divclass}>
                             <span></span><img className='img-fluid' src={this.props.img} alt=''/>
                         </div>
