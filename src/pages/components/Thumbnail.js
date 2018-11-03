@@ -4,11 +4,10 @@ import PropTypes from 'prop-types';
 class Thumbnail extends Component {
     render() {
         const divclass = this.props.bgcolor.concat(' rounded text-center position-absolute w-100 h-100');
-        let url = '/projects/';
-        url = url.concat(this.props.url);
+        const url = '/projects/';
         return (
             <div className='col-12 col-md-6 col-lg-4 mb-4'>
-                <a className='fw-thumbnail-link' href={url} alt=''>
+                <a className='fw-thumbnail-link' href={url.concat(this.props.url)} alt=''>
                     <div className='position-relative fw-thumbnail-wrapper fw-square mb-2'>
                         <div className={divclass}>
                             <span></span><img className='img-fluid' src={this.props.img} alt=''/>

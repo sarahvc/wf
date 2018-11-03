@@ -8,7 +8,7 @@ import pnc from '../styles/assets/pncthumbnail.png';
 import shoppinglist from '../styles/assets/shoppinglistthumbnail.png';
 import personae from '../styles/assets/personamockup.png';
 import ezmoto from '../styles/assets/personamockup.png';
-import dorm from '../styles/assets/personamockup.png';
+import dorm from '../styles/assets/dormthumbnail.png';
 import dashboard from '../styles/assets/personamockup.png';
 import bodyscrabble from '../styles/assets/personamockup.png';
 import favlist from '../styles/assets/personamockup.png';

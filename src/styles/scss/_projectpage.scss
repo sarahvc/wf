@@ -30,3 +30,25 @@
         }
     }
 }
+
+.fw-shoppinglist {
+    .fw-bg {
+        background-size: cover, cover;
+        background-image: linear-gradient(rgba(255, 89, 94, 0.7), rgba(255, 89, 94, 0.7)), url('http://localhost:3000/shoppinglist.jpg');
+    }
+
+    h3 {
+        @extend .text-orange;
+    }
+}
+
+.fw-personae {
+    .fw-bg {
+        background-size: cover, cover;
+        background-image: linear-gradient(rgba(255, 202, 58, 0.7), rgba(255, 202, 58, 0.7)), url('http://localhost:3000/personae.jpg');
+    }
+
+    h3 {
+        @extend .text-yellow;
+    }
+}

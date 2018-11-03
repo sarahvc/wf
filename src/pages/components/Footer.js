@@ -8,7 +8,7 @@ const Footer = () => (
         </div>
         <footer className='bg-white'>
             <div className='container py-4'>
-                <p className='text-secondary mb-0 font-nunito'>Website Designed &amp; Crafted by Wei Fang. 2018 &copy; Wei Fang</p>
+                <p className='mb-0 font-nunito'>Website Designed &amp; Crafted by Wei Fang. 2018 &copy; Wei Fang</p>
             </div> 
         </footer>
     </div>

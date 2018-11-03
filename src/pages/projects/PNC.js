@@ -32,6 +32,7 @@ import pncsb02 from '../../styles/assets/pncsb02.png';
 import pncsb03 from '../../styles/assets/pncsb03.png';
 
 import clientvideo from '../../styles/assets/client-portal.mp4';
+import Footlinks from '../components/Footlinks';
 
 const PNC = () => (
     <div className='fw-pnc'>
@@ -121,6 +122,7 @@ const PNC = () => (
                 </div>
             </div>
         </main>
+        <Footlinks next='shoppinglist'/>
         <Footer/>
     </div>
 );
