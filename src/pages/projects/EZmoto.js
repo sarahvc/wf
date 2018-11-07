@@ -20,7 +20,7 @@ const EZmoto = () => (
                 </div>
             </div>
         </main>
-        <Footlinks prev='pnc' next='personae'/>
+        <Footlinks prev='personae' next='dorm'/>
         <Footer/>
     </div>
 );

@@ -69,7 +69,7 @@ const Shoppinglist = () => (
                     <Takeaway title='UX is not only about interaction' content='In this project I worked with many people from different teams to make it successful. The interaction design is not the only thing that matters in the user experience. I think it is the case with most of the products out there. Therefore as a practitioner in UX, one should always think more, and have the initiatives to work with different people to build a better user experience together. '/>
                     <Takeaway title='Grow with my product' content='From this project, I’m determined that I would keep working in company instead of agency because I like to be dedicated and to think about how to improve a product, it’s like growing with your product. It makes me feel the ownership as well as a sense of belonging.'/>
                 </div>
-                <p className='fw-reference mt-5'>Reference: The background image under the page title is <a href="https://www.freepik.com/free-photo/laptop-with-toy-shopping-trolley_3216968.htm">Designed by Freepik</a></p>
+                <p className='fw-reference mt-5'>Reference: The background image under the page title is <a className='fw-link' href="https://www.freepik.com/free-photo/laptop-with-toy-shopping-trolley_3216968.htm">Designed by Freepik</a></p>
             </div>
         </main>
         <Footlinks prev='pnc' next='personae'/>

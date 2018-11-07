@@ -7,19 +7,19 @@ class TwoColImg extends Component {
             <div className='container mt-5'>
                 {this.props.textLeft
                 ?<div className='row'>
-                    <div className='col-12 col-md-4'>
+                    <div className='col-12 col-md-5'>
                         <h3 className='font-nunito'>{this.props.title}</h3>
                         <p>{this.props.text}</p>
                     </div>
-                    <div className='col-12 col-md-8'>
+                    <div className='col-12 col-md-7'>
                         <img className='img-fluid' src={this.props.src} alt=''/>
                     </div>
                 </div>
                 :<div className='row'>
-                    <div className='col-12 col-md-8'>
+                    <div className='col-12 col-md-7'>
                         <img className='img-fluid' src={this.props.src} alt=''/>
                     </div>
-                    <div className='col-12 col-md-4'>
+                    <div className='col-12 col-md-5'>
                         <h3 className='font-nunito'>{this.props.title}</h3>
                         <p>{this.props.text}</p>
                     </div>

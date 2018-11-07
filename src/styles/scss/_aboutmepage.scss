@@ -7,39 +7,43 @@
         margin-left: 10px;
     }
     }
-} 
-
-.fw-aboutme-img {
-    border-radius: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.6;
 }
 
-.fw-aboutme-container {
-    padding: 48px 0 68px 0;
-    background-size: cover, cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('http://localhost:3000/aboutme.png');
-    .fw-aboutme {
-        padding: 3rem 1rem 1rem 3rem;
-        background-color: rgba(255, 255, 255, 0.7);
-        position: relative;
+.fw-aboutme-bg {
+    z-index: 1;
+    &::after{
+        content: '';
+        height: 110%;
+        width: 100%;
+        position: absolute;
         z-index: 2;
-        &::after{
-            content: '';
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            bottom: -30px;
-            right: -20px;
-            background-color: rgba(128, 201, 38, 0.4);
-            z-index: -1;
-        }
-    }
+        bottom: 10px;
+        right: 20px;
+        background-color: rgba(128, 201, 38, 0.25);
+    }    
+}
+
+.fw-aboutme {
+    top: -1.2rem;
+    left: 1rem;
+    background-color: white;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
 }
 
 .fw-aboutme-title {
     font-size: 3.5rem;
+    z-index: 2;
+    &::after{
+        content: '';
+        width: 210px;
+        height: 151px;
+        position: absolute;
+        z-index: 1;
+        bottom: 14px;
+        right: 20px;
+        background-color: rgba(128, 201, 38, 0.25);
+    }
 }
 
 .fw-aboutme-decor {

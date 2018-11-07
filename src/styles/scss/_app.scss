@@ -68,24 +68,25 @@ body {
   }
 
   .bg-trans-orange {
-    background-color: rgba(255, 89, 94, 0.7);
+    background-color: #FFC2C4;
   }
   
   .bg-trans-yellow {
-    background-color: rgba(255, 202, 58, 0.7);
+    background-color: #FFEBB7;
   }
   
   .bg-trans-green {
-    background-color: rgba(128, 201, 38, 0.7);
+    background-color: #D4EBB0;
   }
   
   .bg-trans-blue {
-    background-color: rgba(25, 130, 196, 0.8);
+    background-color: #ABD1E9;
   }
   
   .bg-trans-purple {
-    background-color: rgba(106, 76, 147, 0.7);
+    background-color: #C8BDD7;
   }
+
   
   .text-trans-orange {
     color: rgba(255, 89, 94, 0.7);
@@ -170,7 +171,7 @@ a.text-green {
   font-size: 10px;
 }
 
-.fw-footlinks a, .fw-reference a {
-  color: #156BA1;
+.fw-links a, .fw-links{
+  color: #67961E;
 }
 

@@ -1,25 +1,28 @@
 
 .fw-overview-wrapper {
-    width: 100%;
-    padding-bottom: 42.2%;
-    q {
-        font-size: 2rem;
-        font-weight: 300;
+    h1 {
+        font-size: 2.5rem;
     }
-    p {
+    .fw-quote {
+        margin-top: 36px;
         font-size: 1.2rem;
+        font-weight: 300;
+        &::before {
+            content: "“";
+            position: absolute;
+            left: -1.2rem;
+            top: -2rem;
+            color: rgba(128, 201, 38, 0.25);
+            font-size: 10rem;
+            line-height: 10rem;
+            font-family: 'Nunito', sans-serif;
+        }
     }
 }
-
+h3 {
+    @extend .text-green;  
+}
 .fw-pnc {
-    .fw-bg {
-        background-size: cover, cover;
-        background-image: linear-gradient(rgba(25, 130, 196,0.8), rgba(25, 130, 196,0.8)), url('http://localhost:3000/pncmockup.jpeg');
-    }
-
-    h3 {
-        @extend .text-blue;
-    }
     .carousel-control-prev div, .carousel-control-next div {
         @extend .bg-trans-blue;
         width: 44px;
@@ -31,24 +34,9 @@
     }
 }
 
-.fw-shoppinglist {
-    .fw-bg {
-        background-size: cover, cover;
-        background-image: linear-gradient(rgba(255, 89, 94, 0.7), rgba(255, 89, 94, 0.7)), url('http://localhost:3000/shoppinglist.jpg');
-    }
+// .fw-shoppinglist {
+// }
 
-    h3 {
-        @extend .text-orange;
-    }
-}
+// .fw-personae {
 
-.fw-personae {
-    .fw-bg {
-        background-size: cover, cover;
-        background-image: linear-gradient(rgba(255, 202, 58, 0.7), rgba(255, 202, 58, 0.7)), url('http://localhost:3000/personae.jpg');
-    }
-
-    h3 {
-        @extend .text-yellow;
-    }
-}
+// }

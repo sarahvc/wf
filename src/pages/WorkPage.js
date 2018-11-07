@@ -9,13 +9,9 @@ import shoppinglist from '../styles/assets/shoppinglistthumbnail.png';
 import personae from '../styles/assets/personamockup.png';
 import ezmoto from '../styles/assets/personamockup.png';
 import dorm from '../styles/assets/dormthumbnail.png';
-import dashboard from '../styles/assets/personamockup.png';
-import bodyscrabble from '../styles/assets/personamockup.png';
-import favlist from '../styles/assets/personamockup.png';
-import crossborder from '../styles/assets/personamockup.png';
-
-
-
+import dashboard from '../styles/assets/dashboardthumbnail.png';
+import ethereum from '../styles/assets/ethereum-outline.png';
+import gravity from '../styles/assets/Gravity.png';
 
 const Work = () => (
     <div>
@@ -23,15 +19,15 @@ const Work = () => (
         <main className='container'>
             <Skillset/>
             <div className='row'>
-                <Thumbnail bgcolor='bg-trans-blue' img={pnc} url='pnc' title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
-                <Thumbnail bgcolor='bg-trans-orange' img={shoppinglist} url='shoppinglist' title='SOCIALIZED SHOPPING LIST' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-trans-yellow' img={personae} url='personae' title='ONLINE SHOPPING PERSONAE' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-trans-purple' img={ezmoto} url='ezmoto' title='EZMOTO INC.' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-trans-green' img={dorm} url='dorm' title='HOMEY DORM' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-trans-orange' img={dashboard} url='dashboard' title='DASHBOARD' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-trans-yellow' img={bodyscrabble} url='bodyscrabble' title='BODY SCRABBLE' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-trans-orange' img={favlist} url='favlist' title='FAVORTITE LIST' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-trans-purple' img={crossborder} url='crossborder' title='EASY CROSSBORDER SHOPPING' brief='a unified system'/>
+                <Thumbnail bgcolor='bg-gray' img={gravity} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='A design system for Pearson Higher Education digital learning products.'/>
+                <Thumbnail bgcolor='bg-gray' img={ethereum} url='decentralism' title='DECENTRALISM' brief='A decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
+                <Thumbnail bgcolor='bg-gray' img={pnc} url='pnc' title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
+                <Thumbnail bgcolor='bg-gray' img={shoppinglist} url='shoppinglist' title='SOCIALIZED SHOPPING LIST' brief='a unified system'/>
+                <Thumbnail bgcolor='bg-gray' img={personae} url='personae' title='ONLINE SHOPPING PERSONAE' brief='a unified system'/>
+                <Thumbnail bgcolor='bg-gray' img={ezmoto} url='ezmoto' title='EZMOTO INC.' brief='a unified system'/>
+                <Thumbnail bgcolor='bg-gray' img={dorm} url='dorm' title='HOMEY DORM' brief='a unified system'/>
+                <Thumbnail bgcolor='bg-gray' img={dashboard} url='dashboard' title='DASHBOARD' brief='a unified system'/>
+                <Thumbnail bgcolor='bg-scrabble' noimg={true} url='bodyscrabble' title='BODY SCRABBLE' brief='a unified system'/>
             </div>
         </main>
        <Footer/>

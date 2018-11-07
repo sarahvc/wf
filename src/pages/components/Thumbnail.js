@@ -3,14 +3,19 @@ import PropTypes from 'prop-types';
 
 class Thumbnail extends Component {
     render() {
-        const divclass = this.props.bgcolor.concat(' rounded text-center position-absolute w-100 h-100');
+        const divclass = this.props.bgcolor.concat(' fw-thumbnail-bg text-center position-absolute w-100 h-100');
         const url = '/projects/';
         return (
             <div className='col-12 col-md-6 col-lg-4 mb-4'>
                 <a className='fw-thumbnail-link' href={url.concat(this.props.url)} alt=''>
                     <div className='position-relative fw-thumbnail-wrapper fw-square mb-2'>
                         <div className={divclass}>
-                            <span></span><img className='img-fluid' src={this.props.img} alt=''/>
+                            <span></span>
+                            { 
+                                this.props.noimg
+                                ?null
+                                :<img className='img-fluid' src={this.props.img} alt=''/>
+                            }
                         </div>
                         <div className='fw-brief position-absolute mb-0 px-3'>
                             <p className='my-3'>{this.props.brief}</p>
@@ -28,7 +33,8 @@ Thumbnail.propTypes = {
     img: PropTypes.object.isRequired,
     title: PropTypes.string.isRequired,
     brief: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired
+    url: PropTypes.string.isRequired,
+    noimg: PropTypes.bool
 };
 
 export default Thumbnail;
