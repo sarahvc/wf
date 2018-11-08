@@ -4,6 +4,7 @@ import Overview from '../components/Overview';
 import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 import TwoColImg from '../components/TwoColImg';
+//import dashboardtop from '../../styles/assets';
 
 const Dashboard = () => (
     <div className='fw-dashboard'>
@@ -31,7 +32,7 @@ const Dashboard = () => (
                 </div>
             </div> 
         </main>
-        <Footlinks prev='pnc' next='personae'/>
+        <Footlinks prev='dorm' next='scrabble'/>
         <Footer/>
     </div>
 );

@@ -19,15 +19,15 @@ const Work = () => (
         <main className='container'>
             <Skillset/>
             <div className='row'>
-                <Thumbnail bgcolor='bg-gray' img={gravity} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='A design system for Pearson Higher Education digital learning products.'/>
-                <Thumbnail bgcolor='bg-gray' img={ethereum} url='decentralism' title='DECENTRALISM' brief='A decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
-                <Thumbnail bgcolor='bg-gray' img={pnc} url='pnc' title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
-                <Thumbnail bgcolor='bg-gray' img={shoppinglist} url='shoppinglist' title='SOCIALIZED SHOPPING LIST' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-gray' img={personae} url='personae' title='ONLINE SHOPPING PERSONAE' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-gray' img={ezmoto} url='ezmoto' title='EZMOTO INC.' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-gray' img={dorm} url='dorm' title='HOMEY DORM' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-gray' img={dashboard} url='dashboard' title='DASHBOARD' brief='a unified system'/>
-                <Thumbnail bgcolor='bg-scrabble' noimg={true} url='bodyscrabble' title='BODY SCRABBLE' brief='a unified system'/>
+                <Thumbnail img={gravity} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='A design system for Pearson Higher Education digital learning products.'/>
+                <Thumbnail img={ethereum} url='decentralism' title='DECENTRALISM' brief='A decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
+                <Thumbnail img={pnc} url='pnc' title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
+                <Thumbnail img={shoppinglist} url='shoppinglist' title='SOCIALIZED SHOPPING LIST' brief='A new feature based on user research and data analysis.'/>
+                <Thumbnail img={personae} url='personae' title='ONLINE SHOPPING PERSONAE' brief='Built five personae for online shopping products using qualitive and quantitive methods.'/>
+                <Thumbnail img={ezmoto} url='ezmoto' title='EZMOTO INC.' brief='A website for buying &amp; selling used cars, and sharing experience.'/>
+                <Thumbnail img={dorm} url='dorm' title='HOMEY DORM' brief='Bridged the gap in new students&#39; journey to CMU campus.'/>
+                <Thumbnail img={dashboard} url='dashboard' title='DASHBOARD' brief='Designed dashboard to help DCNR assessing pest presence and tree health.'/>
+                <Thumbnail briefcolor='fw-brief-white' noimg={true} url='bodyscrabble' title='BODY SCRABBLE' brief='A game that combines physical and mental fun. A catalyst for unique social experiences'/>
             </div>
         </main>
        <Footer/>

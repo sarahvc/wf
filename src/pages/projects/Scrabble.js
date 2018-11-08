@@ -34,8 +34,8 @@ const Scrabble = () => (
                         <h3>FINAL DESIGN</h3>
                         <p>
                             <ol>
-                                <li>Combines physical and mental fun.</li>
-                                <li>Catalyst for unique social experiences -- Memory-maker!</li>
+                                <li>A game that combines physical and mental fun.</li>
+                                <li>A catalyst for unique social experiences -- Memory-maker!</li>
                                 <li>A great ice-breaker -- Takes the shy right out of you :)</li>
                             </ol>
                         </p>

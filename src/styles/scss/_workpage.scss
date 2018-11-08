@@ -5,11 +5,18 @@
         vertical-align: middle;
     }
 
+    .fw-brief-green {
+        background-color: rgba($color: #8AC926, $alpha: 0.3);  
+    }
+
+    .fw-brief-white {
+        background-color: rgba($color: white, $alpha: 0.5); 
+    }
+
     .fw-brief {
         max-height: 0;
         overflow: hidden;
         bottom: 0;
-        background-color: rgba($color: #8AC926, $alpha: 0.3);
         border-radius: 0 0 10px 10px;
     }
 
@@ -67,6 +74,7 @@
     .fw-skills {
         position: relative;
         font-size: 1rem;
+        font-weight: 500;
         &::after {
             position: absolute;
             content: '';
@@ -78,13 +86,13 @@
     .fw-skills-a::after {
         right: 0;
         top: 0.7rem;
-        background-color: rgba(255, 89, 94, 0.2);
+        background-color: rgba(128, 201, 38, 0.2);
     }
 
     .fw-skills-b::after {
         left: 0;
         top: -0.2rem;
-        background-color: rgba(25, 130, 196, 0.2);
+        background-color: rgba(128, 201, 38, 0.2);
     }
 }
 
