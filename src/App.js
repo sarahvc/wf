@@ -29,7 +29,7 @@ const App =() => (
         <Route path={process.env.PUBLIC_URL + '/projects/ezmoto'} component={EZmoto} />
         <Route path={process.env.PUBLIC_URL + '/projects/dorm'} component={Dorm} />
         <Route path={process.env.PUBLIC_URL + '/projects/dashboard'} component={Dashboard} />
-        <Route path={process.env.PUBLIC_URL + '/projects/bodyscrabble'} component={Scrabble} />
+        <Route path={process.env.PUBLIC_URL + '/projects/scrabble'} component={Scrabble} />
       </div>
     </Router>
 );

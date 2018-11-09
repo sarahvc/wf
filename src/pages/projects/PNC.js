@@ -120,7 +120,7 @@ const PNC = () => (
                 </div>
             </div>
         </main>
-        <Footlinks next='shoppinglist'/>
+        <Footlinks prev='decentralism' next='shoppinglist'/>
         <Footer/>
     </div>
 );

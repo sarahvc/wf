@@ -9,7 +9,7 @@ const DesignSystem = () => (
     <div className='fw-designsystem'>
         <Menu main={false}/>
         <main>
-            <Overview title='' quote='' source='--- ' summary={[' ',<strong>as</strong>, ' ']} myrole={[' ',<strong>aa</strong>, ' ']} type='' duration='7 months / 2 semesters.' members=''/>
+            <Overview title='DESIGN SYSTEM' summary={['A design system for Pearson Higher Education digital learning products.']} myrole={['Front end developer']} type='' duration='2 months.' members=''/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <h2 className='text-center mt-5'>TAKEAWAY</h2>
@@ -20,7 +20,7 @@ const DesignSystem = () => (
                 </div>
             </div>
         </main>
-        <Footlinks prev='pnc' next='personae'/>
+        <Footlinks next='decentralism'/>
         <Footer/>
     </div>
 );
