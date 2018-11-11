@@ -22,7 +22,7 @@ class Overview extends Component {
                 {
                     this.props.summary
                     ?<TwoColImg title='SUMMARY' text={this.props.summary} src={this.props.topimg}/>
-                    :<div className='container mt-5'>
+                    :<div className='container mt-4'>
                         <div className='row'>
                             <div className='col-12 col-md-6 offset-md-3'>
                                 <img className='img-fluid' src={this.props.topimg} alt=''/>

@@ -1,4 +1,3 @@
-
 .fw-overview-wrapper {
     h1 {
         font-size: 2.5rem;
@@ -22,9 +21,9 @@
 h3 {
     @extend .text-green;  
 }
-.fw-pnc {
+.fw-pnc, .fw-dorm {
     .carousel-control-prev div, .carousel-control-next div {
-        @extend .bg-trans-blue;
+        @extend .bg-trans-green;
         width: 44px;
         height: 44px;
         border-radius: 6px;

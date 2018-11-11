@@ -5,7 +5,7 @@ class Footlinks extends Component {
     render() {
         const url = '/projects/';
         return (
-            <div className='fw-links container d-flex justify-content-between'>
+            <div className='fw-links container d-flex justify-content-between mt-5'>
                 <a href='/'>Work</a>
                 <div>
                     {this.props.prev

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class TwoColImg extends Component {
     render() {
         return (
-            <div className='container mt-5'>
+            <div className='container mt-4'>
                 {this.props.textLeft
                 ?<div className='row'>
                     <div className='col-12 col-md-5'>

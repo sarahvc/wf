@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import title from '../../styles/assets/title.svg';
+import title from '../../styles/assets/title.png';
 import logo from '../../styles/assets/logo.svg';
 
 class Menu extends Component {
@@ -15,7 +15,7 @@ class Menu extends Component {
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                     <i className="fas fa-bars"></i>
                     </button>
-                    <span className="navbar-brand"><img className={this.props.main?'':'fw-small-logo'} src={this.props.main?title:logo} alt='Wei Fang, full stack designer'/></span>
+                    <span className="navbar-brand"><img className={this.props.main?'fw-big-title':'fw-small-logo'} src={this.props.main?title:logo} alt='Wei Fang, full stack designer'/></span>
                     <div className="collapse navbar-collapse text-right" id="menu">
                         <ul className='navbar-nav ml-auto'>
                             <li className='nav-item ml-5 font-nunito'><a className={workClass} href='/'>Work</a></li>
