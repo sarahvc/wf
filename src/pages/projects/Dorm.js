@@ -8,6 +8,7 @@ import top from '../../styles/assets/cmudormtop.png';
 import cjm from '../../styles/assets/presentcjm.jpg';
 import moving from '../../styles/assets/moveinday.jpg';
 import dorm from '../../styles/assets/dorm.png';
+import dormweb from '../../styles/assets/dormweb.png';
 import wf00 from '../../styles/assets/wireframesdorm.png';
 import wf01 from '../../styles/assets/dormwireframes00.png';
 import wf02 from '../../styles/assets/dormwireframes01.png';
@@ -97,8 +98,16 @@ const Dorm = () => (
                     <div className='row'>
                         <div className='col-12 col-md-8 offset-md-2 mt-4'>
                             <h3>FINAL DESIGN</h3>
-                            <img className='img-fluid' src={dorm} alt=''/>
-                            <iframe className='d-block mx-auto mt-4' width="560" height="315" title='mobile version demo' src="https://www.youtube.com/embed/pmCXO38TFZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                            <p id='dormmobile' className='mb-0 mx-auto'>Mobile version</p>
+                            <iframe aria-labelledby='dormmobile' className='d-block mx-auto' width="560" height="315" title='mobile version demo' src="https://www.youtube.com/embed/pmCXO38TFZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-12 col-md-10 offset-md-1 mt-4'>
+                            <figure>
+                                <figcaption>Web version</figcaption>
+                                <img className='img-fluid' src={dormweb} alt=''/>
+                            </figure>
                         </div>
                     </div>
                 </div>

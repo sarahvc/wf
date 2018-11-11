@@ -4,6 +4,8 @@ import Overview from '../components/Overview';
 import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 import top from '../../styles/assets/decentralismtop.png';
+import wf from '../../styles/assets/decentralismwf.png';
+import hf from '../../styles/assets/decentralismhf.png';
 
 const Decentralism = () => (
     <div className='fw-decentralism'>
@@ -12,6 +14,8 @@ const Decentralism = () => (
             <Overview title='DECENTRALISM' topimg={top} summary={['This is the first decentralized art creation and auction project on the Ethereum blockchain, in which a DArt, Genesis, is created and auctioned simultaneously.']} myrole={['UX designer. Front end developer.']}type='Side project. DApp.' duration='3 months' members='Wei Lv, Yuan Ren, Ricky Yang, Alvina.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
+                <img src={wf} className='img-fluid' alt=''/>
+                <img src={hf} className='img-fluid' alt=''/>
             </div>
         </main>
         <Footlinks prev='designsystem' next='pnc'/>

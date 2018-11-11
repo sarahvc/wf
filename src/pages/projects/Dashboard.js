@@ -5,6 +5,7 @@ import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 import TwoColImg from '../components/TwoColImg';
 import top from '../../styles/assets/dashboardtop.jpg';
+import gif from '../../styles/assets/dashboard.gif';
 
 const Dashboard = () => (
     <div className='fw-dashboard'>
@@ -25,9 +26,9 @@ const Dashboard = () => (
             <TwoColImg textLeft={true} title='DIGITAL DESIGN' text='In my first few drafts of digital design, I tried to present all of the information that I think of importance on the one single screen. The screen looked so busy. Then I realized I shouldn&#39;t be so obsessed with my findings from the data. I need to think of the design constraints carefully too. So in the final design, I removed some charts and combined some charts.' src=''/>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-12 col-md-6 offset-md-3'>
+                    <div className='col-12 col-md-8 offset-md-2'>
                         <h3>FINAL DESIGN</h3>
-                        <img className='img-fluid' src='' alt=''/>
+                        <img className='img-fluid rounded-0' src={gif} alt=''/>
                     </div>
                 </div>
             </div> 
