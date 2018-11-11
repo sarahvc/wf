@@ -4,13 +4,13 @@ import Overview from '../components/Overview';
 import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 import TwoColImg from '../components/TwoColImg';
-//import dashboardtop from '../../styles/assets';
+import top from '../../styles/assets/dashboardtop.jpg';
 
 const Dashboard = () => (
     <div className='fw-dashboard'>
         <Menu main={false}/>
         <main>
-            <Overview title='DASHBOARD' type='Course Project. Forestry.' duration='3 weeks.' members='Individual Project.'/>
+            <Overview title='DASHBOARD' topimg={top} type='Course Project. Forestry.' duration='3 weeks.' members='Individual Project.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='row'>

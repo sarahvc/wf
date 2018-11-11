@@ -16,12 +16,13 @@ import personae01 from '../../styles/assets/persona2.png';
 import personae02 from '../../styles/assets/persona3.png';
 import personae03 from '../../styles/assets/persona4.png';
 import personae04 from '../../styles/assets/persona5.png';
+import top from '../../styles/assets/personaetop.png';
 
 const Personae = () => (
     <div className='fw-personae'>
         <Menu main={false}/>
         <main>
-            <Overview title='PERSONAE' quote='We should have done this a long time ago.' source='--- A colleague from the market department' summary={['I initiated a personae project after working in our online shopping products team as the user researcher for months. In this project, I employed methods that I learnt from my psychology research projects in college, and categorized users into five personae. And this is only a start. I kept promoting the personae so that it could be handy for my colleagues and that it could cast real influence on our daily work. Eventually, the personae got referred to more and more, and people from other department employed it too.']} type='User research in work. E-commerce.' duration='4 months.' members='Individual Project.'/>
+            <Overview title='PERSONAE' quote='We should have done this a long time ago.' source='--- A colleague from the market department' topimg={top} summary={['I initiated a personae project after working in our online shopping products team as the user researcher for months. In this project, I employed methods that I learnt from my psychology research projects in college, and categorized users into five personae. And this is only a start. I kept promoting the personae so that it could be handy for my colleagues and that it could cast real influence on our daily work. Eventually, the personae got referred to more and more, and people from other department employed it too.']} type='User research in work. E-commerce.' duration='4 months.' members='Individual Project.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='row'>

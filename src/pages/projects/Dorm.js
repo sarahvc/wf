@@ -6,6 +6,7 @@ import Footlinks from '../components/Footlinks';
 
 import top from '../../styles/assets/cmudormtop.png';
 import cjm from '../../styles/assets/presentcjm.jpg';
+import moving from '../../styles/assets/moveinday.jpg';
 import dorm from '../../styles/assets/dorm.png';
 
 const Dorm = () => (
@@ -42,19 +43,14 @@ const Dorm = () => (
                     </div>
                     <div className='row'>
                         <div className='col-12 col-md-6 offset-md-3'>
-                            <p>After discussion and brainstorming, we decided to proceed with the third pain points because we found this gap in their experience very subtle and interesting. When they arrived at CMU, there were volunteers who helped them with their luggage and and talked with them about the campus life. This was a very warm and nice experience as it could ease their weariness after a long trip and their tension to the new environment. However, things were totally different after they got to the dorm. The volunteers left to help other new students. There were only them with lots of luggage waiting for unpacking in an empty and deserted room. To deal with this change, we proposed an idea of providing a little customization on their new dorm.</p>
-                        </div>
-                    </div>
-                    <div className='row'>
-                        <div className='col-12 col-md-6'>
-                            <img className='img-fluid' src={cjm} alt=''/>
-                        </div>
-                        <div className='col-12 col-md-6'>
+                            <p className='mb-0'>After discussion and brainstorming, we decided to proceed with the third pain points because we found this gap in their experience very subtle and interesting. When they arrived at CMU, there were volunteers who helped them with their luggage and and talked with them about the campus life. This was a very warm and nice experience as it could ease their weariness after a long trip and their tension to the new environment.</p>
+                            <img className='img-fluid' src={moving} alt=''/>
+                            <p className='mt-4 mb-0'>However, things were totally different after they got to the dorm. The volunteers left to help other new students. There were only them with lots of luggage waiting for unpacking in an empty and deserted room. To deal with this change, we proposed an idea of providing a little customization on their new dorm.</p>
                             <img className='img-fluid' src={dorm} alt=''/>
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='col-12 col-md-6 offset-md-3'>
+                        <div className='col-12 col-md-6 offset-md-3 mt-5'>
                             <h3>WIREFRAMES</h3>
                             <p>We drew wireframes to discuss and iterate our design.</p>
                         </div>

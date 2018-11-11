@@ -27,7 +27,7 @@ const Work = () => (
                 <Thumbnail img={ezmoto} url='ezmoto' title='EZMOTO INC.' brief='A website for buying &amp; selling used cars, and sharing experience.'/>
                 <Thumbnail img={dorm} url='dorm' title='HOMEY DORM' brief='Bridged the gap in new students&#39; journey to CMU campus.'/>
                 <Thumbnail img={dashboard} url='dashboard' title='DASHBOARD' brief='Designed dashboard to help DCNR assessing pest presence and tree health.'/>
-                <Thumbnail briefcolor='fw-brief-white' noimg={true} url='bodyscrabble' title='BODY SCRABBLE' brief='A game that combines physical and mental fun. A catalyst for unique social experiences'/>
+                <Thumbnail briefcolor='fw-brief-white' noimg={true} url='scrabble' title='BODY SCRABBLE' brief='A game that combines physical and mental fun. A catalyst for unique social experiences'/>
             </div>
         </main>
        <Footer/>

@@ -17,13 +17,10 @@ import proto from '../../styles/assets/proto.png';
 import card from '../../styles/assets/card.png';
 import designProcess from '../../styles/assets/designProcess.png';
 import ksarchit from '../../styles/assets/keystone-architecture.jpeg';
-// import homesa from '../../styles/assets/home-sa.png';
-// import hometmo from '../../styles/assets/home-tmo.jpg';
-// import homeimpl from '../../styles/assets/home-impl-manager.png';
 import homesa from '../../styles/assets/sa1.gif';
 import hometmo from '../../styles/assets/tmo.gif';
 import hometmo2 from '../../styles/assets/tmo2.gif';
-
+import top from '../../styles/assets/pnctop.png';
 import pncsb00 from '../../styles/assets/pncsb00.png';
 import pncsb01 from '../../styles/assets/pncsb01.jpg';
 import pncsb02 from '../../styles/assets/pncsb02.png';
@@ -36,7 +33,7 @@ const PNC = () => (
     <div className='fw-pnc'>
         <Menu main={false}/>
         <main>
-            <Overview title='PNC COMMERCIAL CARD' quote='This project was successful. It is going to happen at PNC and is slated for implementation and is on everyone&#39;s roadmap.' source='--- PNC Bank Treasury Management Group' summary={['We worked with ',<strong>PNC Bank</strong>, ' on improving customer onboarding process for their commercial card products. Based on our research, we built ',<strong>Keystone</strong>, ', a comprehensive end-to-end application with bank and client-facing components. And we also streamlined the workflow accordingly. Our work was speaking highly not only by faculty mentors but also by PNC client.']} myrole={['As the ',<strong>user research lead</strong>, ', I selected research methods, designed the research plan, drafted interview and usability test scripts, and managed the research process. I was also the ',<strong>project manager</strong>,' in the later half of this project. I organized the weekly summary & plan meeting, assigned work among teammates, and managed the project progress. Last but not least, as a team member, I worked with all my teammates in every part of our project.']} type='CMU MHCI Capstone Project. Commercial Banking Service.' duration='7 months / 2 semesters.' members='Jacqueline Chien, Maria Robles, Samarth Bahuguna.'/>
+            <Overview title='PNC COMMERCIAL CARD' quote='This project was successful. It is going to happen at PNC and is slated for implementation and is on everyone&#39;s roadmap.' source='--- PNC Bank Treasury Management Group' topimg={top} summary={['We worked with ',<strong>PNC Bank</strong>, ' on improving customer onboarding process for their commercial card products. Based on our research, we built ',<strong>Keystone</strong>, ', a comprehensive end-to-end application with bank and client-facing components. And we also streamlined the workflow accordingly. Our work was speaking highly not only by faculty mentors but also by PNC client.']} myrole={['As the ',<strong>user research lead</strong>, ', I selected research methods, designed the research plan, drafted interview and usability test scripts, and managed the research process. I was also the ',<strong>project manager</strong>,' in the later half of this project. I organized the weekly summary & plan meeting, assigned work among teammates, and managed the project progress. Last but not least, as a team member, I worked with all my teammates in every part of our project.']} type='CMU MHCI Capstone Project. Commercial Banking Service.' duration='7 months / 2 semesters.' members='Jacqueline Chien, Maria Robles, Samarth Bahuguna.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='col-12 offset-md-2 col-md-8 mt-4'>

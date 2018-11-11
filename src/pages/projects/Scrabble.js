@@ -4,12 +4,13 @@ import Overview from '../components/Overview';
 import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 import TwoColImg from '../components/TwoColImg';
+import top from '../../styles/assets/top.png';
 
 const Scrabble = () => (
     <div className='fw-scrabble'>
         <Menu main={false}/>
         <main>
-            <Overview title='BODY SCRABBLE' quote='Even though I lost, I enjoyed the game.' source='--- A player from our first round of testing' src='' type='Course Project. Game Design.' duration='4 weeks.' members='Jacqueline Chien, Shilpa Sarode, Katherine Habeck, Qianxu Zeng.'/>
+            <Overview title='BODY SCRABBLE' quote='Even though I lost, I enjoyed the game.' source='--- A player from our first round of testing' topimg={top}  type='Course Project. Game Design.' duration='4 weeks.' members='Jacqueline Chien, Shilpa Sarode, Katherine Habeck, Qianxu Zeng.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='row'>
