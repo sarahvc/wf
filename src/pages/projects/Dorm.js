@@ -113,7 +113,7 @@ const Dorm = () => (
                 </div>
             </div>
         </main>
-        <Footlinks prev='ezmoto' next='dashboard'/>
+        <Footlinks prev='shoppinglist' next='dashboard'/>
         <Footer/>
     </div>
 );

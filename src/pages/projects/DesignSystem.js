@@ -1,24 +1,26 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import Takeaway from '../components/Takeaway';
 import Overview from '../components/Overview';
 import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 import top from '../../styles/assets/designsystemtop.png';
+import content from '../../styles/assets/designsystemcontent.png';
 
 const DesignSystem = () => (
     <div className='fw-designsystem'>
         <Menu main={false}/>
         <main>
-            <Overview title='DESIGN SYSTEM' topimg={top} summary={['A design system for Pearson Higher Education digital learning products.']} myrole={['Front end developer']} type='' duration='2 months.' members=''/>
+            <Overview title='DESIGN SYSTEM' topimg={top} summary={["We're building a design system with tools and advide for every stage of the design process. This is a evolution from our current UX Framework which offers building blocks for designing digital learning products. "]} myrole={['As a teammember, I participated in design ideation and exploration, and I reviewed the visual design and provided suggestion on overall consistency and accessibility, which I learnt from my previous experience with Pearson digital learning products. As the front end developer, I built the website and explored different ways of animation implementation with our motion designer.']} type='Project in work.' duration='4 months(on going).' members='Meredith Williamson, Parker Malenke, Bryttni Wolfe, Laura Wixted, Tony Nguyen.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
-                <h2 className='text-center mt-5'>TAKEAWAY</h2>
-                <div className='row mt-4'>
-                    <Takeaway title='' content=''/>
-                    <Takeaway title='' content=''/>
-                    <Takeaway title='' content=''/>
+                <div className='row'>
+                    <div className='col-12 col-md-8 offset-md-2'>
+                        <p>To create this design system, we did case study on the established design systems like <a className='text-green' href='https://www.carbondesignsystem.com/'>IBM's Carbon design system</a> and <a className='text-green' href='https://polaris.shopify.com/'>Shopify's Polaris</a>. We also invited the team leaders who supervised the IBM's design system to have a talk and Q&A with us to share their experience. As for logistics, we explored tools like InVision's design system manager, and we made a roadmap to plan for branding, release, test and iteration.</p>
+                        <p className='mb-1'>Now the design system website is still in the process of design and implementation. And it's slated for release in Q1, 2019.</p>
+                        <img className='img-fluid' src={content} alt=''/>
+                    </div>
                 </div>
+                
             </div>
         </main>
         <Footlinks next='decentralism'/>

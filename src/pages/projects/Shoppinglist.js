@@ -10,12 +10,13 @@ import liststyle from '../../styles/assets/shoppingLiebiao.png';
 import dliststyle from '../../styles/assets/doubleLiebiao.png';
 import shoppinglistArchi from '../../styles/assets/shoppinglistArchi.png';
 import shoppinglistIllus from '../../styles/assets/shoppinglist00.png';
+import shoppinglistresult from '../../styles/assets/shoppinglistresult.png';
 
 const Shoppinglist = () => (
     <div className='fw-shoppinglist'>
         <Menu main={false}/>
         <main>
-            <Overview title='SOCIALIZED SHOPPING LIST' quote='Some products with a very similar idea began to show up in the market after us.' source='' summary={['I proposed a feature called socialized shopping list, in which buyers could share their experience by making a public shopping list based on scenarios. And potential buyers could refer to the list to find what they need. We implemented this feature and achieved high user retention rate and conversion rate. And it &#39;s also the pioneer in the market.']} myrole={['As the product manager, I initiated this project based on my user research results and my analysis of our product. And I managed to convince my manager and colleagues when they were not positive about this idea. As this project being carried out, I designed the prototype, worked with the UI designer and developers to implement it, and coordinated with digital content editors and business development executives to promote it.']} type='New feature in work. E-Commerce.' duration='2 months.' members='Jingjing Du, Minghao Wang, Meng Zhu, Jian Dun, Zhao Xu, Hong Hai.'/>
+            <Overview title='SOCIALIZED SHOPPING LIST' quote='Some products with a very similar idea began to show up in the market after us.' source='' topimg={shoppinglistIllus} summary={["I proposed a feature called socialized shopping list, in which buyers could share their experience by making a public shopping list based on scenarios. And potential buyers could refer to the list to find what they need. We implemented this feature and achieved high user retention rate and conversion rate. And it's also the pioneer in the market."]} myrole={['As the product manager, I initiated this project based on my user research results and my analysis of our product. And I managed to convince my manager and colleagues when they were not positive about this idea. As this project being carried out, I designed the prototype, worked with the UI designer and developers to implement it, and coordinated with digital content editors and business development executives to promote it.']} type='New feature in work. E-Commerce.' duration='2 months.' members='Jingjing Du, Minghao Wang, Meng Zhu, Jian Dun, Zhao Xu, Hong Hai.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='row'>
@@ -24,9 +25,8 @@ const Shoppinglist = () => (
                         <p>When I was conducting user interviews, I discovered that some users were not satisfied with the amount of content our products offered. Other users, though they didn’t explicitly express that they wanted more content, remarked that they could finish browsing all of our new content every day within a matter of minutes. This problem was also validated by our backend data.</p>
                         <p>Moreover, based on the personae that I created before, there were user needs that we haven’t fulfilled very well. To be more detailed, persona A is keen on discovering more interesting content and goods. Persona B prefers goods with high quality.</p>
                         <p>As for our product, we were offering mainly gathered deals from online retailers and shopping experience sharing articles from our users. The deals are limited by sales from online retailers. We could control neither the amount of deals nor what kinds of goods are included in the deals. In the articles, users reviewed goods from package to the experience of using thoroughly, which means the contribution is not very high since it really takes time for users to write the article. Nevertheless, articles are too long and detailed for some people. Our top competitors were having the same gap in their content.</p>
-                        <img className='img-fluid' src={shoppinglistIllus} alt=''/>
                         <h3>MY PROPOSAL</h3>
-                        <p>To address these problems, I proposed "socialized shopping list". Buyers could share their shopping experience with others by making their shopping list public. The list should be scenarios based, so that it would tell a story, and it would be like a solution to a better quality of life. For example, what do you need to start baking. What is recommended to improve your hair. And then potential buyers could easily decide which item best fulfilled their purpose. Actually, I noticed that there were already users who submitted articles in which they shared multiple products. But they format and the criteria that we selected articles were not friendly to this kind of sharing. Connecting these two types of buyers would benefit them both. In addition, this feature would create valuable content without straining our already-overworked digital content editors.</p>
+                        <p className='mb-1'>To address these problems, I proposed "socialized shopping list". Buyers could share their shopping experience with others by making their shopping list public. The list should be scenarios based, so that it would tell a story, and it would be like a solution to a better quality of life. For example, what do you need to start baking. What is recommended to improve your hair. And then potential buyers could easily decide which item best fulfilled their purpose. Actually, I noticed that there were already users who submitted articles in which they shared multiple products. But they format and the criteria that we selected articles were not friendly to this kind of sharing. Connecting these two types of buyers would benefit them both. In addition, this feature would create valuable content without straining our already-overworked digital content editors.</p>
                         <img className='img-fluid' src={shoppinglistArchi} alt=''/>
                     </div>
                 </div>
@@ -42,16 +42,16 @@ const Shoppinglist = () => (
                 </div>
                 <div className='col-12 offset-md-2 col-md-8 mt-4'>
                     <h3>DESIGN</h3>
-                    <p>Though the pilot test equipped me with useful information on design, I went through several iterations and many discussions with my colleagues to design: there wasn’t a feature or product like that before, and I had to follow the design style and constraints of our products. After we settled in our team about the design, I also conducted cognitive walkthrough with colleagues in other department to improve it.</p>
+                    <p className='mb-1'>Though the pilot test equipped me with useful information on design, I went through several iterations and many discussions with my colleagues to design: there wasn’t a feature or product like that before, and I had to follow the design style and constraints of our products. After we settled in our team about the design, I also conducted cognitive walkthrough with colleagues in other department to improve it.</p>
                 </div>
                 <div className='row'>
-                    <div className='col-12 col-md-4 mt-4'>
+                    <div className='col-12 col-md-4'>
                         <img className='img-fluid rounded-0' src={cardstyle} alt=''/>
                     </div>
-                    <div className='col-12 col-md-4 mt-4'>
+                    <div className='col-12 col-md-4'>
                         <img className='img-fluid rounded-0' src={liststyle} alt=''/>
                     </div>
-                    <div className='col-12 col-md-4 mt-4'>
+                    <div className='col-12 col-md-4'>
                         <img className='img-fluid rounded-0' src={dliststyle} alt=''/>
                     </div>
                 </div>
@@ -61,7 +61,8 @@ const Shoppinglist = () => (
                 </div>
                 <div className='col-12 offset-md-2 col-md-8 mt-4'>
                     <h3>RESULTS</h3>
-                    <p>This feature went live and achieved a 7-day user retention rate of 19%, and 5% conversion rate from clicks into orders. Not only did the users give positive feedback like ‘can’t wait to see more!’, but furthermore many of them signed up for an invitation code to create their own shopping lists. Moreover, some products with a very similar idea began to show up in the market after us.</p>
+                    <p className='mb-1'>This feature went live and achieved a 7-day user retention rate of 19%, and 5% conversion rate from clicks into orders. Not only did the users give positive feedback like ‘can’t wait to see more!’, but furthermore many of them signed up for an invitation code to create their own shopping lists. Moreover, some products with a very similar idea began to show up in the market after us.</p>
+                    <img className='img-fluid' src={shoppinglistresult} alt=''/>
                 </div>
                 <h2 className='text-center mt-5'>TAKEAWAY</h2>
                 <div className='row mt-4'>
@@ -69,10 +70,9 @@ const Shoppinglist = () => (
                     <Takeaway title='UX is not only about interaction' content='In this project I worked with many people from different teams to make it successful. The interaction design is not the only thing that matters in the user experience. I think it is the case with most of the products out there. Therefore as a practitioner in UX, one should always think more, and have the initiatives to work with different people to build a better user experience together. '/>
                     <Takeaway title='Grow with my product' content='From this project, I’m determined that I would keep working in company instead of agency because I like to be dedicated and to think about how to improve a product, it’s like growing with your product. It makes me feel the ownership as well as a sense of belonging.'/>
                 </div>
-                <p className='fw-reference mt-5'>Reference: The background image under the page title is <a className='fw-link' href="https://www.freepik.com/free-photo/laptop-with-toy-shopping-trolley_3216968.htm">Designed by Freepik</a></p>
             </div>
         </main>
-        <Footlinks prev='pnc' next='personae'/>
+        <Footlinks prev='personae' next='dorm'/>
         <Footer/>
     </div>
 );
