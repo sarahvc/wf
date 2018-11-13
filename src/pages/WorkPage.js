@@ -14,11 +14,11 @@ import ethereum from '../styles/assets/ethereum-outline.png';
 import gravity from '../styles/assets/Gravity.png';
 
 const Work = () => (
-    <div>
+    <div className='fw-wp-bg'>
         <Menu main={true}/>
         <main className='container'>
             <Skillset/>
-            <div className='row'>
+            <div className='fw-projects-container d-flex flex-wrap'>
                 <Thumbnail img={gravity} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='A design system for Pearson Higher Education digital learning products.'/>
                 <Thumbnail img={ethereum} url='decentralism' title='DECENTRALISM' brief='A decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
                 <Thumbnail img={pnc} url='pnc' title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>

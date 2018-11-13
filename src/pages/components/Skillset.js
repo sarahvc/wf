@@ -1,15 +1,11 @@
 import React from 'react';
 
 const Skillset = () => (
-    <div className='fw-skillset d-flex flex-column flex-lg-row justify-content-center mt-4 mb-5'>
-        <div>
-            <p className='text-right mb-0 fw-skills fw-skills-a'>User Research, Market research, Data analysis</p>
-            <p className='text-green text-right font-nunito text-right'>DO THE RIGHT THINGS</p>
-        </div>
-        <div className='align-self-end'>
-            <p className='text-green mb-0 ml-auto mr-0 font-nunito position-relative'>DO THE THINGS RIGHT</p>
-            <p className='mb-0 fw-skills fw-skills-b'>Interaction design, Usability test, Prototyping, <br/>Front end development, Project management</p>
-        </div>
+    <div className='fw-skills mx-auto mb-5 mt-3'>
+        <p className='text-white font-yrsa mb-0 text-right'>DO THE RIGHT THINGS</p>
+        <p className='mb-4 font-yrsa'>User research, Market research, Data analysis</p>
+        <p className='text-white text-right mb-0 font-yrsa'>DO THE THINGS RIGHT</p>
+        <p className='mb-0 font-yrsa'>Interaction design, Usability test, Prototyping,<br/>Front end development, Project management</p>
     </div>
 );
 

@@ -7,9 +7,9 @@ class Thumbnail extends Component {
         const bgimg = this.props.noimg?'fw-thumbnail-bg bg-scrabble text-center position-absolute w-100 h-100':'fw-thumbnail-bg text-center position-absolute w-100 h-100';
         const url = '/projects/';
         return (
-            <div className='col-12 col-md-6 col-lg-4 mb-4'>
+            <div className='fw-thumbnail-container'>
                 <a className='fw-thumbnail-link' href={url.concat(this.props.url)} alt=''>
-                    <div className='position-relative fw-thumbnail-wrapper fw-square mb-2'>
+                    <div className='position-relative fw-thumbnail-wrapper fw-square'>
                         <div className={bgimg}>
                             <span></span>
                             { 
@@ -21,8 +21,8 @@ class Thumbnail extends Component {
                         <div className={briefclass}>
                             <p className='my-3'>{this.props.brief}</p>
                         </div>
+                        <p className='fw-thumbnail-title text-center font-nunito position-absolute'>{this.props.title}</p>
                     </div>
-                    <p className='text-center font-nunito'>{this.props.title}</p>
                 </a>
             </div>
         );

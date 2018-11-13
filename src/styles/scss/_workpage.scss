@@ -17,7 +17,6 @@
         max-height: 0;
         overflow: hidden;
         bottom: 0;
-        border-radius: 0 0 10px 10px;
     }
 
     img, .fw-brief {
@@ -36,14 +35,24 @@
         img {
             transform:scale(1.1);
         }
+        .fw-thumbnail-title {
+            display: none;
+        }
     }
+
+    .fw-thumbnail-title {
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     p {
         font-size: 14px;
         font-weight: 300;
     }
     .fw-thumbnail-bg {
-        border-radius: 10px;
-        background-color: #f5f5f5;
+        background-color: white;
     }
 }
 
@@ -58,45 +67,49 @@
     }
 }
 
-.fw-skillset {
-    height: 160px;
-    div {
-        width: 50%;
-        @media (max-width: 992px) {
-            width: 100%;
-        }
-    }
-    p.font-nunito {
-        font-size: 1.5rem;
-        font-weight: 900;
-        opacity: 0.2; 
-    }
-    .fw-skills {
-        position: relative;
-        font-size: 1rem;
-        font-weight: 500;
-        &::after {
-            position: absolute;
-            content: '';
-            width: 277px;
-            height: 1em;
-            border-radius: 3px;
-        }
-    }
-    .fw-skills-a::after {
-        right: 0;
-        top: 0.7rem;
-        background-color: rgba(128, 201, 38, 0.2);
-    }
-
-    .fw-skills-b::after {
-        left: 0;
-        top: -0.2rem;
-        background-color: rgba(128, 201, 38, 0.2);
-    }
-}
-
 .bg-scrabble {
     background-size: cover;
     background-image: url('http://fangweisarah.com/scrabble.png');
+}
+
+.fw-wp-bg {
+    background: linear-gradient(to bottom, #8AC926 0%,#8AC926 15%,#f5f5f5 15%,#f5f5f5 100%);
+    @media (min-width: 576px) {
+        background: linear-gradient(to bottom, #8AC926 0%,#8AC926 28%,#f5f5f5 28%,#f5f5f5 100%);
+    }
+}
+
+.fw-projects-container {
+    background-color: white;
+}
+
+.fw-thumbnail-container {
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 2px solid #f5f5f5;
+    @media (min-width: 576px) {
+        width: 50%;
+        &:nth-child(1), &:nth-child(3), &:nth-child(5), &:nth-child(7) {
+            border-right: 2px solid #f5f5f5;
+        }
+    }
+    @media (min-width: 992px) {
+        width: 33.33%;
+        &:nth-child(3) {
+            border-right: 0;
+        }
+        &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7), &:nth-child(8) {
+            border-right: 2px solid #f5f5f5;
+        }
+    } 
+}
+
+.fw-skills {
+    max-width: 408px;
+    p:nth-child(2), p:nth-child(4) {
+        font-size: 1.4rem;
+    }
+    p:nth-child(1), p:nth-child(3) {
+        opacity: 0.8;
+    } 
 }
