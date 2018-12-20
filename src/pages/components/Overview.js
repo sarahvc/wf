@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import TwoColImg from './TwoColImg';
+//import TwoColImg from './TwoColImg';
 
 class Overview extends Component {
     render() {

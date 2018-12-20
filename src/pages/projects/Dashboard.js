@@ -26,7 +26,7 @@ const Dashboard = () => (
                 <div className='row'>
                     <div className='col-12 col-md-6 offset-md-3'>
                         <h3>DESIGN CHALLENGE</h3>
-                        <p>We were asked to create an online dashboard design for the foresters of the Pennsylvania <a className='fw-links' href='http://www.dcnr.state.pa.us'>Department of Conservation and Natural Resources (DCNR)</a> , which would supply information about pest presence and tree health to help DCNR make the actionable assessments. Specific design constraints including that there's no interaction involved, it's a single, non-scrolling, information display, and there should be simple animations that allow the viewer to process and understand information at a glance. </p>
+                        <p>We were asked to create an online dashboard design for the foresters of the Pennsylvania <a className='text-green' href='http://www.dcnr.state.pa.us'>Department of Conservation and Natural Resources (DCNR)</a> , which would supply information about pest presence and tree health to help DCNR make the actionable assessments. Specific design constraints including that there's no interaction involved, it's a single, non-scrolling, information display, and there should be simple animations that allow the viewer to process and understand information at a glance. </p>
                     </div>
                 </div>
             </div>

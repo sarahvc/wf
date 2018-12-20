@@ -16,7 +16,7 @@ class Menu extends Component {
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                     <i className="fas fa-bars"></i>
                     </button>
-                    <span className="navbar-brand"><img className={this.props.main?'fw-big-title':'fw-small-logo'} src={this.props.main?this.props.active?title:whitetitle:logo} alt='Wei Fang, full stack designer'/></span>
+                    <span className="navbar-brand"><a href="/"><img className={this.props.main?'fw-big-title':'fw-small-logo'} src={this.props.main?this.props.active?title:whitetitle:logo} alt='Wei Fang, full stack designer'/></a></span>
                     <div className="collapse navbar-collapse text-right" id="menu">
                         <ul className='navbar-nav ml-auto'>
                             <li className='nav-item ml-5 font-nunito'><a className={workClass} href='/'>Work</a></li>

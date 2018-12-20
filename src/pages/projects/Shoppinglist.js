@@ -72,7 +72,7 @@ const Shoppinglist = () => (
                 </div>
             </div>
         </main>
-        <Footlinks prev='personae' next='dorm'/>
+        <Footlinks prev='personae' next='ezmoto'/>
         <Footer/>
     </div>
 );

@@ -11,16 +11,16 @@ body {
   font-family: 'Yrsa', serif;
 }
 
-.font-ptsans {
-  font-family: 'PT Sans', sans-serif;
-}
-
 .font-rosario {
   font-family: 'Rosario', sans-serif;
 }
 
 .font-nunito {
   font-family: 'Nunito', sans-serif;
+}
+
+.font-varela {
+  font-family: 'Varela Round', sans-serif;
 }
 
 .navbar-brand {
@@ -110,6 +110,9 @@ body {
 
 .nav-link {
   color: black;
+  &:hover {
+    color: #3F5C12;
+  }
 }
 
 .nav-link.main-active::before {
@@ -176,10 +179,6 @@ a.text-green {
 
 .fw-reference {
   font-size: 10px;
-}
-
-.fw-links a, .fw-links{
-  color: #67961E;
 }
 
 .fw-big-title {

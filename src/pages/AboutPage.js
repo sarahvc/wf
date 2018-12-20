@@ -14,7 +14,13 @@ const About = () => (
             <div className='row py-5 mt-4'>
                 <div className='col-12 col-md-6 offset-md-3 fw-aboutme-bg position-relative border pl-4 py-4'>
                     <p className='mb-0 position-absolute fw-aboutme font-nunito'>Hello! I'm Wei.</p>
-                    <p className='mb-0'>I'm a full stack designer as well as a theater lover, all because of my curiosity about how different people think and behave, and my desire to create things that people can enjoy themselves with. I believe good designers should be invisible, just like good directors who arrange everything so naturally and appropriately that the audience can immerse themselves in the theater with no efforts.</p>
+                    <p className='mb-2'>I'm a full stack designer as well as a theater lover, all because of my curiosity about how different people think and behave, and my desire to create things that people can enjoy themselves with. I believe good designers should be invisible, just like good directors who arrange everything so naturally and appropriately that the audience can immerse themselves in the theater with no efforts.</p>
+                    <p className='mb-0'>And here are my favorites when designing and developing products:</p>
+                    <ul>
+                        <li>Combination of both quantitative and qualitative methods for user research.</li>
+                        <li>MVP for validating ideas.</li>
+                        <li>Goal and objective.</li>
+                    </ul>
                 </div>
             </div>
         </div>    

@@ -5,11 +5,11 @@ class Footlinks extends Component {
     render() {
         const url = '/projects/';
         return (
-            <div className='fw-links container d-flex justify-content-between mt-5'>
-                <a href='/'>Work</a>
+            <div className='container d-flex justify-content-between mt-5'>
+                <a className='text-green' href='/'>Work</a>
                 <div>
                     {this.props.prev
-                    ?<a href={url.concat(this.props.prev)}>Prev</a>
+                    ?<a className='text-green' href={url.concat(this.props.prev)}>Prev</a>
                     :null
                     }
                     {this.props.prev&&this.props.next
@@ -17,7 +17,7 @@ class Footlinks extends Component {
                     :null
                     }
                     {this.props.next
-                    ?<a href={url.concat(this.props.next)}>Next</a>
+                    ?<a className='text-green' href={url.concat(this.props.next)}>Next</a>
                     :null
                     }
                 </div>
