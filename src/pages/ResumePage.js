@@ -8,7 +8,7 @@ const Resume = () => (
     <div>
         <Menu main={true} active='resume'/>
             <div className='fw-resume-container text-right text-green'>
-                <a className='text-green' href='http://www.fangweisarah.com/WeiFangResume.pdf' target='_blanck'>Download Resume</a>
+                <a className='text-green' href='http://www.fangweisarah.com/WeiFangResume.pdf' target='_blanck'>Download PDF</a>
             </div>
             <Document className='fw-resume-container border' file={resume}>
                 <Page pageNumber={1}/>
