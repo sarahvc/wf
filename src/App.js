@@ -12,6 +12,7 @@ import Dashboard from './pages/projects/Dashboard';
 import Scrabble from './pages/projects/Scrabble';
 import DesignSystem from './pages/projects/DesignSystem';
 import Decentralism from './pages/projects/Decentralism';
+import Tadpoles from './pages/projects/Tadpoles';
 
 import './styles/scss/_app.scss';
 
@@ -21,6 +22,7 @@ const App =() => (
         <Route exact path={process.env.PUBLIC_URL + '/'} component={Work} />
         <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
         <Route path={process.env.PUBLIC_URL + '/resume'} component={Resume} />
+        <Route path={process.env.PUBLIC_URL + '/projects/tadpoles'} component={Tadpoles} />
         <Route path={process.env.PUBLIC_URL + '/projects/designsystem'} component={DesignSystem} />
         <Route path={process.env.PUBLIC_URL + '/projects/decentralism'} component={Decentralism} />
         <Route path={process.env.PUBLIC_URL + '/projects/pnc'} component={PNC} />

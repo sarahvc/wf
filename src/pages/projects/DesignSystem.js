@@ -10,7 +10,7 @@ const DesignSystem = () => (
     <div className='fw-designsystem'>
         <Menu main={false}/>
         <main>
-            <Overview title='DESIGN SYSTEM' topimg={top} summary={["We're building a design system with tools and advide for every stage of the design process. This is a evolution from our current UX Framework which offers building blocks for designing digital learning products. "]} myrole={['As a teammember, I participated in design ideation and exploration, and I reviewed the visual design and provided suggestion on overall consistency and accessibility, which I learnt from my previous experience with Pearson digital learning products. As the front end developer, I built the website and explored different ways of animation implementation with our motion designer.']} type='Project in work. Design system.' duration='4 months(on going).' members='Meredith Williamson, Parker Malenke, Bryttni Wolfe, Laura Wixted, Tony Nguyen.'/>
+            <Overview title='DESIGN SYSTEM' topimg={top} summary={["We're building a design system with tools and advide for every stage of the design process. This is a evolution from our current UX Framework which offers building blocks for designing digital learning products. "]} myrole={['As a teammember, I participated in design ideation and exploration, and I conducted UX audit and accessibility review for the web design. As the front end developer, I built the website and explored different ways of animation implementation with our motion designer.']} type='Project in work. Design system.' duration='4 months(on going).' members='Meredith Williamson, Parker Malenke, Bryttni Wolfe, Laura Wixted, Tony Nguyen.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='row'>
@@ -23,7 +23,7 @@ const DesignSystem = () => (
                 
             </div>
         </main>
-        <Footlinks next='decentralism'/>
+        <Footlinks prev='tadpoles' next='decentralism'/>
         <Footer/>
     </div>
 );
