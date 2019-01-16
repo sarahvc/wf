@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 import Menu from './components/Menu';
 import amadeus from '../styles/assets/amadeus.png';
 import bnsh from '../styles/assets/bnsh.png';
@@ -14,7 +14,11 @@ const About = () => (
             <div className='row py-5 mt-4'>
                 <div className='col-12 col-md-6 offset-md-3 fw-aboutme-bg position-relative border pl-4 py-4'>
                     <p className='mb-0 position-absolute fw-aboutme font-yrsa'>Hello! I'm Wei.</p>
-                    <p className='mb-3'>I'm a full stack designer as well as a theater lover, all because of my curiosity about how different people think and behave, and my desire to create things that people can enjoy themselves with. I believe good designers should be invisible, just like good directors who arrange everything so naturally and appropriately that the audience can immerse themselves in the theater with no efforts.</p>
+                    <p className='mb-5'>I'm a full stack designer as well as a theater lover, all because of my curiosity about how different people think and behave, and my desire to create things that people can enjoy themselves with. Connect with me if you love theater too and want some company to go to a play at NYC!</p>
+                    <div className='text-center fw-aboutme-contact fw-contact my-2 position-absolute'>
+                        <a href="mailto:fangwei.sarah@gmail.com"><i className="fas fa-at mr-1"></i>Email</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/fangweisarah/" rel="noopener noreferrer"><i className="fab fa-linkedin mr-1"></i>LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>    
@@ -43,7 +47,11 @@ const About = () => (
                 </div>
             </div>
         </div>
-       <Footer/>
+        <footer className='bg-white mt-5'>
+            <div className='container py-4'>
+                <p className='mb-0 font-nunito'>Website Designed &amp; Crafted by Wei Fang. 2018 &copy; Wei Fang</p>
+            </div> 
+        </footer>
     </div>
 );
 

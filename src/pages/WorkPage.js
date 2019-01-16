@@ -20,14 +20,14 @@ const Work = () => (
         <main className='container'>
             <Skillset/>
             <div className='fw-projects-container d-flex flex-wrap'>
-                <Thumbnail img={tad} url='tadpoles' title='TADPOLES PARENT APP REDESIGN' brief='Redesigned the Tadpoles parent app from information architechture to user interface.'/>
-                <Thumbnail img={gravity} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='A design system for Pearson Higher Education digital learning products.'/>
-                <Thumbnail img={ethereum} url='decentralism' title='DECENTRALISM' brief='A decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
                 <Thumbnail img={pnc} brieflast={true} url='pnc' title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
+                <Thumbnail img={tad} url='tadpoles' title='TADPOLES PARENT APP REDESIGN' brief='Redesigned the Tadpoles parent app from information architechture to user interface.'/>
+                <Thumbnail img={gravity} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='Participated in the design system for Pearson Higher Education digital learning products.'/>
+                <Thumbnail img={ethereum} url='decentralism' title='DECENTRALISM - A BLOCKCHAIN GAME' brief='Designed and developed a decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
                 <Thumbnail img={personae} url='personae' title='ONLINE SHOPPING PERSONAE' brief='Built five personae for online shopping products using qualitive and quantitive methods.'/>
-                <Thumbnail img={shoppinglist} url='shoppinglist' title='SOCIALIZED SHOPPING LIST' brief='A new feature for online shopping content based on user research and data analysis.'/>
+                <Thumbnail img={shoppinglist} url='shoppinglist' title='SOCIALIZED SHOPPING LIST' brief='Initiated a new feature for online shopping content based on user research and data analysis.'/>
                 <Thumbnail img={ezmoto} brieflast={true} url='ezmoto' title='EZ MOTO INC.' brief='Designed and developed a website for a used car dealer.'/>
-                <Thumbnail img={dorm} url='dorm' title='HOMEY DORM' brief='Bridged the gap in new students&#39; journey to CMU campus.'/>
+                <Thumbnail img={dorm} url='dorm' title='HOMEY DORM' brief='Bridging the gap in new students&#39; journey to CMU campus.'/>
                 <Thumbnail img={dashboard} url='dashboard' title='DASHBOARD' brief='Designed dashboard to help DCNR assessing pest presence and tree health.'/>
             </div>
         </main>

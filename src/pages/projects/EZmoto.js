@@ -18,7 +18,7 @@ const EZmoto = () => (
     <div className='fw-ezmoto'>
         <Menu main={false}/>
         <main>
-        <Overview title='EZ MOTO INC.' topimg={top} summary={["This is a webiste for a used car dealer. Their goal for this site is mainly about demonstrating their cars on sale and showcasing their services while speaking with customers and vendors. The majority of their deal is done offline."]} myrole={['As the designer and the developer, I collected needs and requirements from the owner and sales people, created wireframes and high fidelity mockups, and used wordpress and bootstrap built the website.']} type='Part-time work.' duration='6 months.' members='Individual Project.'/>
+        <Overview title='EZ MOTO INC.' topimg={top} summary={["This is a webiste for a used car dealer. Their goal for this site is mainly about demonstrating their cars on sale and showcasing their services while speaking with customers and vendors. The majority of their deals is done offline."]} myrole={['As the designer and the developer, I collected needs and requirements from the owner and sales people, created wireframes and high fidelity mockups, and used wordpress and bootstrap to build the website.']} type='Part-time work.' duration='6 months.' members='Individual Project.'/>
             <div className='container'>
                 <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='row'>

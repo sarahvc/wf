@@ -9,6 +9,19 @@
     }
 }
 
+.fw-aboutme-contact {
+    width: 100%;
+    bottom: 25px;
+    z-index: 10;
+    a {
+        color: black;
+        z-index: 10;
+        &:hover {
+            color:  #3F5C12;
+        } 
+    }
+}
+
 .fw-aboutme-bg {
     z-index: 1;
     &::after{

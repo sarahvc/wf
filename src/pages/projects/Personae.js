@@ -95,7 +95,7 @@ const Personae = () => (
                 </div>
             </div>
         </main>
-        <Footlinks prev='pnc' next='shoppinglist'/>
+        <Footlinks prev='decentralism' next='shoppinglist'/>
         <Footer/>
     </div>
 );

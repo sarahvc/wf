@@ -11,14 +11,13 @@ const Skillset = () => (
                             <ul className='list-inline'>
                                 <li className='list-inline-item'>User research,</li>
                                 <li className='list-inline-item'>Market research,</li>
-                                <li className='list-inline-item'>Data analysis,</li>
+                                <li className='list-inline-item'>Data analysis</li>
                             </ul>
                         </li>
                         <li><span>Do the things right</span>
                             <ul className='list-inline'>
-                                <li className='list-inline-item'>Interaction design,</li>
-                                <li className='list-inline-item'>Interaction design,</li>
-                                <li className='list-inline-item'>Usability test,</li>
+                                <li className='list-inline-item'>UX/UI design,</li>
+                                <li className='list-inline-item'>Usability testing,</li>
                                 <li className='list-inline-item'>Prototyping,</li>
                                 <li className='list-inline-item'>Front end development,</li>
                                 <li className='list-inline-item'>Web accessibility,</li>

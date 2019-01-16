@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import ReactGA from 'react-ga';
 import Work from './pages/WorkPage';
 import About from './pages/AboutPage';
 import Resume from './pages/ResumePage';
@@ -18,7 +19,7 @@ import './styles/scss/_app.scss';
 
 const App =() => (
     <Router>
-      <div> 
+      <div onLoad={initializeReactGA}> 
         <Route exact path={process.env.PUBLIC_URL + '/'} component={Work} />
         <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
         <Route path={process.env.PUBLIC_URL + '/resume'} component={Resume} />
@@ -36,4 +37,22 @@ const App =() => (
     </Router>
 );
 
+function initializeReactGA() {
+  ReactGA.initialize('UA-132599765-1');
+  ReactGA.pageview('/');
+  ReactGA.pageview('/about');
+  ReactGA.pageview('/resume');
+  ReactGA.pageview('/projects/pnc');
+  ReactGA.pageview('/projects/tadpoles');
+  ReactGA.pageview('/projects/designsystem');
+  ReactGA.pageview('/projects/decentralism');
+  ReactGA.pageview('/projects/shoppinglist');
+  ReactGA.pageview('/projects/personae');
+  ReactGA.pageview('/projects/ezmoto');
+  ReactGA.pageview('/projects/dorm');
+  ReactGA.pageview('/projects/dashboard');
+}
+
 export default App;
+
+

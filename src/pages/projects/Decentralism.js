@@ -17,7 +17,7 @@ const Decentralism = () => (
                 <div className='row'>
                     <div className='col-12 col-md-10 offset-md-1'>
                         <figure>
-                            <figcaption>Wireframes</figcaption>
+                            <figcaption>We created wireframes to discuss user flows and iterate.</figcaption>
                             <img src={wf} className='img-fluid' alt=''/>
                         </figure>
                         <figure className='mt-4'>
@@ -29,7 +29,7 @@ const Decentralism = () => (
                 </div> 
             </div>
         </main>
-        <Footlinks prev='designsystem' next='pnc'/>
+        <Footlinks prev='designsystem' next='personae'/>
         <Footer/>
     </div>
 );

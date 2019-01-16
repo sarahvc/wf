@@ -46,6 +46,7 @@ const Dorm = () => (
                             <img className='img-fluid' src={moving} alt=''/>
                             <p className='mt-4 mb-0'>However, things were totally different after they got to the dorm. The volunteers left to help other new students. There were only them with lots of luggage waiting for unpacking in an empty and deserted room. To deal with this change, we proposed an idea of providing a little customization on their new dorm.</p>
                             <img className='img-fluid' src={dorm} alt=''/>
+                            <p className='mt-4 mb-0'>To deal with this change, we proposed an idea of providing a little customization on their new dorm, so that their warm and suprising experience could continue after they arrived at the dorm.</p>
                         </div>
                     </div>
                     <div className='row'>
