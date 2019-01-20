@@ -5,9 +5,10 @@ import Overview from '../components/Overview';
 import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 
-import cardstyle from '../../styles/assets/shoppingCard.png';
-import liststyle from '../../styles/assets/shoppingLiebiao.png';
-import dliststyle from '../../styles/assets/doubleLiebiao.png';
+import cardstyle from '../../styles/assets/list01.png';
+import liststyle from '../../styles/assets/list02.png';
+import dliststyle from '../../styles/assets/list00.png';
+import finalstyle from '../../styles/assets/listfinal.png';
 import shoppinglistArchi from '../../styles/assets/shoppinglistArchi.png';
 import shoppinglistIllus from '../../styles/assets/shoppinglist00.png';
 import shoppinglistresult from '../../styles/assets/shoppinglistresult.png';
@@ -46,13 +47,30 @@ const Shoppinglist = () => (
                 </div>
                 <div className='row'>
                     <div className='col-12 col-md-4'>
-                        <img className='img-fluid rounded-0' src={cardstyle} alt=''/>
+                        <figure>
+                            <figcaption>Wireframe 1</figcaption>
+                            <img className='img-fluid rounded-0 border' src={cardstyle} alt=''/>
+                        </figure>
                     </div>
                     <div className='col-12 col-md-4'>
-                        <img className='img-fluid rounded-0' src={liststyle} alt=''/>
+                        <figure>
+                            <figcaption>Wireframe 2</figcaption>
+                            <img className='img-fluid rounded-0 border' src={liststyle} alt=''/>
+                        </figure>
                     </div>
                     <div className='col-12 col-md-4'>
-                        <img className='img-fluid rounded-0' src={dliststyle} alt=''/>
+                        <figure>
+                            <figcaption>Wireframe 3</figcaption>
+                            <img className='img-fluid rounded-0 border' src={dliststyle} alt=''/>
+                        </figure>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-12 col-md-8 offset-md-2'>
+                        <figure>
+                            <figcaption>Final design</figcaption>
+                            <img className='img-fluid rounded-0 border' src={finalstyle} alt=''/>
+                        </figure>
                     </div>
                 </div>
                 <div className='col-12 offset-md-2 col-md-8 mt-4'>

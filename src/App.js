@@ -19,7 +19,7 @@ import './styles/scss/_app.scss';
 
 const App =() => (
     <Router>
-      <div onLoad={initializeReactGA}> 
+      <div> 
         <Route exact path={process.env.PUBLIC_URL + '/'} component={Work} />
         <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
         <Route path={process.env.PUBLIC_URL + '/resume'} component={Resume} />
@@ -52,6 +52,8 @@ function initializeReactGA() {
   ReactGA.pageview('/projects/dorm');
   ReactGA.pageview('/projects/dashboard');
 }
+
+initializeReactGA();
 
 export default App;
 
