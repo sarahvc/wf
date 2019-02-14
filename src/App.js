@@ -14,8 +14,11 @@ import Scrabble from './pages/projects/Scrabble';
 import DesignSystem from './pages/projects/DesignSystem';
 import Decentralism from './pages/projects/Decentralism';
 import Tadpoles from './pages/projects/Tadpoles';
+import StatCrunch from './pages/projects/StatCrunch';
+import NEU from './pages/projects/NEUonlineMBA';
 
 import './styles/scss/_app.scss';
+
 
 const App =() => (
     <Router>
@@ -29,6 +32,8 @@ const App =() => (
         <Route path={process.env.PUBLIC_URL + '/projects/pnc'} component={PNC} />
         <Route path={process.env.PUBLIC_URL + '/projects/shoppinglist'} component={Shoppinglist} />
         <Route path={process.env.PUBLIC_URL + '/projects/personae'} component={Personae} />
+        <Route path={process.env.PUBLIC_URL + '/projects/statcrunch'} component={StatCrunch} />
+        <Route path={process.env.PUBLIC_URL + '/projects/neu'} component={NEU} />
         <Route path={process.env.PUBLIC_URL + '/projects/ezmoto'} component={EZmoto} />
         <Route path={process.env.PUBLIC_URL + '/projects/dorm'} component={Dorm} />
         <Route path={process.env.PUBLIC_URL + '/projects/dashboard'} component={Dashboard} />

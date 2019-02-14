@@ -62,3 +62,11 @@ h3 {
         }
     }
 }
+
+.fw-password {
+    height: calc(100vh - 300px);
+    form {
+        width: 80%;
+        max-width: 360px;
+    }
+}
