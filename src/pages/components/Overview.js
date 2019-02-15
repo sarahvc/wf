@@ -7,7 +7,7 @@ class Overview extends Component {
         return (
             <div className='fw-overview-wrapper'>
                 <div className='container mt-5'>
-                    <h1 className='font-nunito text-center'>{this.props.title}</h1>
+                    <h1 className='font-yrsa text-center'>{this.props.title}</h1>
                     <div className='row'>
                         {
                             this.props.quote &&

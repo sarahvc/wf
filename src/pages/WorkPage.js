@@ -26,7 +26,7 @@ const Work = () => (
                 <Thumbnail img={ethereum} url='decentralism' title='DECENTRALISM - A BLOCKCHAIN GAME' brief='Designed and developed a decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
                 <Thumbnail img={personae} url='personae' title='E-COMMERCE PERSONAE' brief='Built five personae for online shopping products using qualitive and quantitive methods.'/>
                 <Thumbnail img={shoppinglist} brieflast={true}  url='shoppinglist' title='SHARED SHOPPING LIST' brief='Initiated a new feature for online shopping content based on user research and data analysis.'/>
-                <Thumbnail img={neu} url='neu' title='NEU ONLINE MBA PROGRAM' brief='Participated in a 2-day workshop to ideate future solutions for NEU online MBA program.'/>
+                <Thumbnail img={neu} url='neu' title='NORTHEASTERN DESIGN WORKSHOP' brief='Participated in a 2-day workshop to ideate future solutions for NEU online MBA program.'/>
                 <Thumbnail img={statcrunch} url='statcrunch' title='STATCRUNCH.COM REDESIGN' brief='Redesigned the statcrunch.com to improve the UX and to match with Pearson branding.'/>
                 <Thumbnail img={ezmoto} brieflast={true} url='ezmoto' title='EZ MOTO INC.' brief='Designed and developed a website for a used car dealer.'/>
             </div>

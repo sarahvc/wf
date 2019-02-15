@@ -163,6 +163,12 @@ h3 {
   font-size: 1.25rem;
 }
 
+h4 {
+  @extend .font-nunito;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 a.text-green {
   &:hover {
     color:  #65931C;

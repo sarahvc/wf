@@ -21,6 +21,7 @@
 h3 {
     @extend .text-green;  
 }
+
 .fw-pnc, .fw-dorm, .fw-ezmoto {
     .carousel-control-prev div, .carousel-control-next div {
         @extend .bg-trans-green;
@@ -63,10 +64,13 @@ h3 {
     }
 }
 
-.fw-password {
-    height: calc(100vh - 300px);
+.fw-password {  
     form {
+        height: calc(100vh - 300px);
         width: 80%;
         max-width: 360px;
+        input {
+            height: 38px;
+        }
     }
 }
