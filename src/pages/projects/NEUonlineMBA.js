@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Menu from '../components/Menu';
 import Footlinks from '../components/Footlinks';
 import Overview from '../components/Overview';
-//import Password from '../components/Password';
+import Password from '../components/Password';
 import top from '../../styles/assets/workshoptop.jpg';
 import dayone from '../../styles/assets/dayone.jpeg';
 import daytwo from '../../styles/assets/daytwo.jpeg';
@@ -19,11 +19,11 @@ import wfinder from '../../styles/assets/Wayfinder.png';
 const NEU = () => (
     <div className='fw-neu'>
         <Menu main={false}/>
+        <Password>
         <main>
-            <Overview title='NORTHEASTERN DESIGN WORKSHOP' topimg={top} summary={['The D’Amore-McKim School of Business (DMSB) at Northeastern University (NEU) has been a key client of Pearson’s Online Learning Service (POLS) since 2006. Our partnership agreement with NEU is up for renewal at the end of December ’19. To secure the renewal of the contract additional value outside of POLS core services must be brought to bear to enhance the student experience and therefore strengthen the Pearson offer to Northeastern. The purpose of this workshop is to  brainstorm, ideate, and illustrate solution concepts that can be shared with Northeastern during the contract negotiations.']} myrole={['UX designer, prototyper.']} type='Project in work. Design system.' duration='3 days.' members='Eric Austrew, Amy Peterson, Anand Castelino, Benjamin Rogers, Eric Basset, Jason Fournier, Katie Pounder, Leah Jewell, Mike Caskey, Paul Sisler, Rachel Sumner, Robert McConnell, Sara Bakken.'/>
-        </main>
-        <div className="container">
-            <h2 className='text-center mt-5'>THE PROJECT</h2>
+            <Overview title='NORTHEASTERN DESIGN WORKSHOP' topimg={top} summary={['The D’Amore-McKim School of Business (DMSB) at Northeastern University (NEU) has been a key client of Pearson’s Online Learning Service (POLS) since 2006. Our partnership agreement with NEU is up for renewal at the end of December ’19. To secure the renewal of the contract additional value outside of POLS core services must be brought to bear to enhance the student experience and therefore strengthen the Pearson offer to Northeastern. The purpose of this workshop is to  brainstorm, ideate, and illustrate solution concepts that can be shared with Northeastern during the contract negotiations.']} myrole={['UX designer, prototyper.']} type='Project in work. Design workshop.' duration='3 days.' members='Eric Austrew, Amy Peterson, Anand Castelino, Benjamin Rogers, Eric Basset, Jason Fournier, Katie Pounder, Leah Jewell, Mike Caskey, Paul Sisler, Rachel Sumner, Robert McConnell, Sara Bakken.'/>
+            <div className="container">
+                <h2 className='text-center mt-5'>THE PROJECT</h2>
                 <div className='row'>
                     <div className='col-12 col-md-8 offset-md-2'>
                         <h3>PRE-WORKSHOP: BACKGROUND AND CONTEXT</h3>
@@ -87,8 +87,10 @@ const NEU = () => (
                         </figure>
                     </div>
                 </div>
-        </div>  
-        <Footlinks prev='shoppinglist' next='statcrunch'/>
+            </div>
+        </main>
+        </Password>
+        <Footlinks prev='designsystem' next='statcrunch'/>
         <Footer/>
     </div>
 );

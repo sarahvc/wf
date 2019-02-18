@@ -8,7 +8,7 @@ import pnc from '../styles/assets/pncthumbnail.png';
 import shoppinglist from '../styles/assets/shoppinglistthumbnail.png';
 import personae from '../styles/assets/personamockup.png';
 import ezmoto from '../styles/assets/ezmotothumbnail.png';
-import statcrunch from '../styles/assets/statcrunch.jpeg';
+import statcrunch from '../styles/assets/sclogo.png';
 import neu from '../styles/assets/neu.png';
 import ethereum from '../styles/assets/ethereum-outline.png';
 import gravity from '../styles/assets/Gravity.png';
@@ -21,14 +21,14 @@ const Work = () => (
             <Skillset/>
             <div className='fw-projects-container d-flex flex-wrap'>
                 <Thumbnail img={pnc} url='pnc' title='PNC COMMERCIAL CARD' brief='Making the commercial card onboarding easier for both bank employees and corporate clients.'/>
-                <Thumbnail img={tad} url='tadpoles' title='TADPOLES PARENT APP REDESIGN' brief='Redesigned the Tadpoles parent app from information architechture to user interface.'/>
-                <Thumbnail img={gravity} brieflast={true} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='Participated in the design system for Pearson Higher Education digital learning products.'/>
-                <Thumbnail img={ethereum} url='decentralism' title='DECENTRALISM - A BLOCKCHAIN GAME' brief='Designed and developed a decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
-                <Thumbnail img={personae} url='personae' title='E-COMMERCE PERSONAE' brief='Built five personae for online shopping products using qualitive and quantitive methods.'/>
-                <Thumbnail img={shoppinglist} brieflast={true}  url='shoppinglist' title='SHARED SHOPPING LIST' brief='Initiated a new feature for online shopping content based on user research and data analysis.'/>
-                <Thumbnail img={neu} url='neu' title='NORTHEASTERN DESIGN WORKSHOP' brief='Participated in a 2-day workshop to ideate future solutions for NEU online MBA program.'/>
+                <Thumbnail img={gravity} url='designsystem' title='PEARSON DESIGN SYSTEM' brief='Participated in the design system for Pearson Higher Education digital learning products.'/>
+                <Thumbnail img={neu} brieflast={true} url='neu' title='NORTHEASTERN DESIGN WORKSHOP' brief='Designed and developed prototypes for future solutions to win contract renewal with Northeastern University on its online MBA program.'/>
                 <Thumbnail img={statcrunch} url='statcrunch' title='STATCRUNCH.COM REDESIGN' brief='Redesigned the statcrunch.com to improve the UX and to match with Pearson branding.'/>
-                <Thumbnail img={ezmoto} brieflast={true} url='ezmoto' title='EZ MOTO INC.' brief='Designed and developed a website for a used car dealer.'/>
+                <Thumbnail img={ethereum} url='decentralism' title='DECENTRALISM - A BLOCKCHAIN GAME' brief='Designed and developed a decentralized blockchain auction game, in which a data visualization artwork using transaction data is the lot.'/>
+                <Thumbnail img={personae} brieflast={true} url='personae' title='E-COMMERCE PERSONAE' brief='Built five personae for online shopping products using qualitive and quantitive methods.'/>
+                <Thumbnail img={shoppinglist} url='shoppinglist' title='SHARED SHOPPING LIST' brief='Initiated a new feature for online shopping content based on user research and data analysis.'/>
+                <Thumbnail img={ezmoto} url='ezmoto' title='EZ MOTO INC.' brief='Designed and developed a website for a used car dealer.'/>
+                <Thumbnail img={tad} brieflast={true} url='tadpoles' title='TADPOLES PARENT APP REDESIGN' brief='Redesigned the Tadpoles parent app from information architechture to user interface.'/>
             </div>
         </main>
        <Footer/>

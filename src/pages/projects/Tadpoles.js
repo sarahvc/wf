@@ -147,7 +147,7 @@ const Tadpoles = () => (
                 </div>
             </div>
         </main>
-        <Footlinks prev='pnc' next='designsystem'/>
+        <Footlinks prev='ezmoto'/>
         <Footer/>
     </div>
 );

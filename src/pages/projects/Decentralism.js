@@ -29,7 +29,7 @@ const Decentralism = () => (
                 </div> 
             </div>
         </main>
-        <Footlinks prev='designsystem' next='personae'/>
+        <Footlinks prev='statcrunch' next='personae'/>
         <Footer/>
     </div>
 );

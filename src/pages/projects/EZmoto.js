@@ -76,7 +76,7 @@ const EZmoto = () => (
                 </div>
             </div>
         </main>
-        <Footlinks prev='shoppinglist' next='dorm'/>
+        <Footlinks prev='shoppinglist' next='tadpoles'/>
         <Footer/>
     </div>
 );

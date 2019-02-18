@@ -77,7 +77,7 @@ const DesignSystem = () => (
                 </div>
             </main>
         </Password>
-        <Footlinks prev='tadpoles' next='decentralism'/>
+        <Footlinks prev='pnc' next='neu'/>
         <Footer/>
     </div>
 );
