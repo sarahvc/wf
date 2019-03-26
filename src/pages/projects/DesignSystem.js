@@ -63,7 +63,7 @@ const DesignSystem = () => (
                             <h4>What could be improved?</h4>
                             <ul>
                                 <li>Lack of direction/management.</li>
-                                <li>Lack of a clear standard for prioritization.</li>
+                                <li>Lack of criteria for prioritization.</li>
                                 <li>Lack of performance measurement/KPIs.</li>
                                 <li>Lack of matching, usable code for components/styles.</li>
                                 <li>Lack of expectation management for users.</li>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="33" viewBox="0 0 32 33">
+    <defs>
+        <filter id="a" width="125%" height="121.6%" x="-12.5%" y="-10.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.280853714 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="b" d="M.147 2.682v11.803c0 1.333 1.061 2.412 2.37 2.412 1.31 0 2.37-1.08 2.37-2.412V2.682L2.518.271.147 2.682z"/>
+        <path id="d" d="M.3 2.682v11.803c0 1.333 1.06 2.412 2.37 2.412s2.37-1.08 2.37-2.412V2.682L2.67.271.3 2.682z"/>
+        <path id="f" d="M.262 2.619V21.49c0 1.332 1.061 2.411 2.37 2.411 1.31 0 2.37-1.079 2.37-2.41V2.618L2.633.207.263 2.62z"/>
+        <linearGradient id="g" x1="49.998%" x2="49.998%" y1="-19.966%" y2="76.696%">
+            <stop offset="0%" stop-color="#4BBFBF"/>
+            <stop offset="100%" stop-color="#08A09E"/>
+        </linearGradient>
+        <path id="i" d="M.07 2.555v25.94c0 1.331 1.061 2.411 2.37 2.411 1.309 0 2.37-1.08 2.37-2.41V2.555L2.44.143.07 2.555z"/>
+        <linearGradient id="j" x1="214.64%" x2="-114.646%" y1="77.435%" y2="25.812%">
+            <stop offset="0%" stop-color="#006989"/>
+            <stop offset="100%" stop-color="#007EA5"/>
+        </linearGradient>
+        <path id="l" d="M.185 2.619V21.49c0 1.332 1.06 2.411 2.37 2.411 1.309 0 2.37-1.08 2.37-2.41V2.618L2.555.207.185 2.62z"/>
+        <linearGradient id="m" x1="50.001%" x2="50.001%" y1="-19.966%" y2="107.659%">
+            <stop offset="0%" stop-color="#4BBFBF"/>
+            <stop offset="100%" stop-color="#00A5A3"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(0 -3)">
+        <g transform="translate(1.538 13.699)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#b"/>
+            </mask>
+            <path fill="#BCD3D0" d="M.147 2.682v11.803c0 1.333 1.061 2.412 2.37 2.412 1.31 0 2.37-1.08 2.37-2.412V2.682L2.518.271.147 2.682z" mask="url(#c)"/>
+        </g>
+        <g transform="translate(25.23 13.699)">
+            <mask id="e" fill="#fff">
+                <use xlink:href="#d"/>
+            </mask>
+            <path fill="#BCD3D0" d="M.3 2.682v11.803c0 1.333 1.06 2.412 2.37 2.412s2.37-1.08 2.37-2.412V2.682L2.67.271.3 2.682z" mask="url(#e)"/>
+        </g>
+        <g transform="translate(7.385 8.377)">
+            <mask id="h" fill="#fff">
+                <use xlink:href="#f"/>
+            </mask>
+            <path fill="url(#g)" d="M.262 2.619V21.49c0 1.332 1.061 2.411 2.37 2.411 1.31 0 2.37-1.079 2.37-2.41V2.618L2.633.207.263 2.62z" mask="url(#h)"/>
+        </g>
+        <g transform="translate(13.538 3.055)">
+            <mask id="k" fill="#fff">
+                <use xlink:href="#i"/>
+            </mask>
+            <path fill="url(#j)" d="M.07 2.555v25.94c0 1.331 1.061 2.411 2.37 2.411 1.309 0 2.37-1.08 2.37-2.41V2.555L2.44.143.07 2.555z" mask="url(#k)"/>
+        </g>
+        <g transform="translate(19.385 8.377)">
+            <mask id="n" fill="#fff">
+                <use xlink:href="#l"/>
+            </mask>
+            <path fill="url(#m)" d="M.185 2.619V21.49c0 1.332 1.06 2.411 2.37 2.411 1.309 0 2.37-1.08 2.37-2.41V2.618L2.555.207.185 2.62z" mask="url(#n)"/>
+        </g>
+    </g>
+</svg>

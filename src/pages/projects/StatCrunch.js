@@ -67,7 +67,7 @@ const StatCrunch = () => (
                         </div>
                         <div className='col-12 col-md-8 offset-md-2 mt-4'>
                             <h3>WEB PAGES REDESIGN</h3>
-                            <p>Then we started to redesign the web content. The process is that the other designer works on the design first and then he sends his work to me for review, and I would rovide suggestions for improving or use Sketch to create my own take. And we would have discussion around different design options. Depending on the complexity of interaction, we would involve user researchers to conduct usabilty test. <a className="text-green" href="https://overflow.io/s/WWRIS9/?node=5a1622f3">Here are a few examples of my redesign work</a>.</p>
+                            <p>Then we started to redesign the web content. The process is that the other designer works on the design first and then he sends his work to me for review, and I would rovide suggestions for improving or use Sketch to create my own take. And we would have discussion around different design options. Depending on the complexity of interaction, we would involve user researchers to conduct usabilty test. <a className="text-green" href="https://overflow.io/s/WWRIS9/?node=5a1622f3" target="_blanck" rel="noopener noreferrer">Here are a few examples of my redesign work</a>.</p>
                         </div>
                     </div>    
                 </div>
